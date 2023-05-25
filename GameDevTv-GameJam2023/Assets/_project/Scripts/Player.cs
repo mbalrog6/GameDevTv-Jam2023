@@ -32,6 +32,8 @@ namespace MB6
 
         public EnergyType PlayerEnergyType => _energy.GetEnergyType;
         public float PlayerEnergyLevel => _energy.GetEnergy;
+
+        public bool IsManifesting { get; private set; }
         
         private SpiritInputs _spiritInputs;
         private Energy _energy;
@@ -101,12 +103,14 @@ namespace MB6
                 OnManifestPower?.Invoke(this, EventArgs.Empty);
                 _rotateTransform.IsRotating = true;
                 _portalTimer = 0f;
+                IsManifesting = true;
             }
 
             if (_isManifesting == true && _spiritInputs.Manifesting == false)
             {
                 OnManifestPowerEnded?.Invoke(this, EventArgs.Empty);
                 _portalTimer = (1 - Mathf.Clamp01(_currentAlphaCutOff / _targetAlphaCutOff)) * _timeToOpenPortal;
+                IsManifesting = false;
             }
 
             if (_spiritInputs.Manifesting && _currentAlphaCutOff > _targetAlphaCutOff)

@@ -1,30 +1,64 @@
 ﻿using System;
 using System.Collections.Generic;
+using MB6._project.Scripts.NPCs.States;
 using MB6.NPCs.States;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 
 namespace MB6
 {
-    public class GoodNPC :MonoBehaviour, INPCEntity
+    public class GoodNPC :MonoBehaviour, INPCEntity, IHealth
     {
         [SerializeField] private Player _player;
         [SerializeField] private LayerMask _layerMask;
+        [SerializeField] private ParticleSystem _goodEnergyParticles;
 
         [SerializeField] private ItemEnergySource _energyProvider;
 
-        [SerializeField] private float Speed;
+        [SerializeField] private int _maxHealth;
         public INPCState CurrentState => _states.Count > 0 ? _states.Peek() : null;
+        public EnergyType NPCEnergyType => _energyProvider.EnergyForm;
+        
+        
+        public int Health { get; protected set; }
+
+        public int MaxHealth
+        {
+            get
+            {
+                return _maxHealth;
+            }
+            set
+            {
+                if (value <= 0)
+                {
+                    _maxHealth = 1;
+                }
+                else
+                {
+                    _maxHealth = value;
+                }
+            }
+        }
+        public bool IsDead; 
+
+        public event EventHandler<EventArgs> OnDied;
 
         private Stack<INPCState> _states;
+        private Dictionary<string, INPCState> _statesLibrary;
+        
         private NPCController _npcController;
 
-        private Dictionary<string, INPCState> _statesLibrary;
+        private bool _isBeingDrained;
+        private bool _particlesActive;
+        
+
 
         private void Awake()
         {
+            IsDead = false;
+            Health = MaxHealth;
             _states = new Stack<INPCState>();
             
             var rayCastPoints = new Vector3[]
@@ -39,7 +73,10 @@ namespace MB6
             _statesLibrary = new Dictionary<string, INPCState>();
             
             _statesLibrary.Add("Pace", new PaceNPCState(_npcController));
-            _statesLibrary.Add("StandStill", new StationaryNPCState(_npcController));
+            _statesLibrary.Add("StandStill", new StationaryNPCState(_npcController, _player, transform));
+            _statesLibrary.Add("Flee", new FleeNPCState(_npcController, _player, transform));
+
+            _particlesActive = true;
         }
 
         public NPCController GetNPCController() => _npcController;
@@ -54,12 +91,65 @@ namespace MB6
 
         private void HandleBeingDrainedEnded(object sender, EventArgs e)
         {
-            PopState();
+            _isBeingDrained = false;
         }
 
         private void HandleBeingDrained(object sender, EventArgs e)
         {
-            PushState(_statesLibrary["StandStill"]);
+            _isBeingDrained = true;
+        }
+
+        public void Update()
+        {
+            if (_isBeingDrained && _player.IsManifesting)
+            {
+                if (_particlesActive)
+                {
+                    if (NPCEnergyType == _player.PlayerEnergyType || _player.PlayerEnergyType == EnergyType.Either)
+                    {
+                        PushState(_statesLibrary["StandStill"]);
+                    }
+                    else if (NPCEnergyType != _player.PlayerEnergyType)
+                    {
+                        PushState(_statesLibrary["Flee"]);
+                    }
+                    _goodEnergyParticles.Stop();
+                    _particlesActive = false;
+                }
+            }
+
+            if (!_particlesActive && !_player.IsManifesting)
+            {
+                if (_states.Peek() == _statesLibrary["StandStill"])
+                {
+                    PopState();
+                }
+                _particlesActive = true;
+                _goodEnergyParticles.Play();
+            }
+
+            if (!_isBeingDrained && !_particlesActive)
+            {
+                if (_states.Peek() == _statesLibrary["StandStill"])
+                {
+                    PopState();
+                }
+                _particlesActive = true;
+                _goodEnergyParticles.Play();
+            }
+
+            if (_states.Peek() == _statesLibrary["Flee"])
+            {
+                if (((FleeNPCState)_states.Peek()).DoneFleeing) 
+                {
+                    if (!_isBeingDrained || _player.PlayerEnergyType == NPCEnergyType 
+                                         || _player.PlayerEnergyType == EnergyType.Either 
+                                         || (_isBeingDrained && !_player.IsManifesting))
+                    {
+                        PopState();
+                    }
+                }
+            }
         }
 
         public void FixedUpdate()
@@ -67,6 +157,11 @@ namespace MB6
             if (_states.Count > 0)
             {
                 _states.Peek().Tick();
+            }
+            
+            if (_npcController.TrackFalling() > 0f)
+            {
+                TakeDamage(MaxHealth);
             }
         }
 
@@ -82,6 +177,7 @@ namespace MB6
         {
             return gameObject;
         }
+        
 
         #region State Management...
         public void ChangeState(INPCState state)
@@ -110,5 +206,37 @@ namespace MB6
             }
         }
         #endregion
+
+        #region Health Related Functions...
+        public void TakeDamage(int amount)
+        {
+            if (amount >= 0) return;
+
+            Health -= amount;
+            if (Health <= 0)
+            {
+                OnDied?.Invoke(this, EventArgs.Empty);
+                IsDead = true;
+            }
+        }
+
+        public void Heal(int amount)
+        {
+            if (amount <= 0) return;
+
+            Health += amount;
+            if (Health >= MaxHealth)
+            {
+                Health = MaxHealth;
+            }
+        }
+
+        public float NormalizedHealth => Mathf.Clamp01((float)Health / MaxHealth);
+        #endregion
+
+        private void CheckForFallDamage()
+        {
+            
+        }
     }
 }

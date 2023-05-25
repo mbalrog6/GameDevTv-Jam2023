@@ -31,6 +31,10 @@ namespace MB6
 
         private RaycastController _raycastController;
         private Ray[] _groundCheckRays;
+
+        public bool IsFalling; 
+        private float _fallDamageVelocity;
+        private float _lastYVelocity;
         
         
         public NPCController(INPCEntity npc, Vector3[] footOffsets, bool initialFacing, LayerMask layerMask)
@@ -52,6 +56,8 @@ namespace MB6
             _groundCheckRays = new Ray[3];
             _groundCheckRays[0] = new Ray(Vector3.zero, -Vector3.up);
             _groundCheckRays[1] = new Ray(Vector3.zero, -Vector3.up);
+
+            _fallDamageVelocity = -16f;
         }
 
         private void GenerateRays()
@@ -76,14 +82,14 @@ namespace MB6
         public bool CheckForGroundAhead()
         { 
             GenerateRays();
-            
+
+            _raycastController.DetectionDistance = 3f;
             _raycastController.Ray = _groundCheckRays[0];
             if (!_raycastController.CheckForCollisions())
             {
                 _raycastController.Ray = _groundCheckRays[1];
                 if (!_raycastController.CheckForCollisions())
                 {
-                    Debug.Log("No Ground Ahead");
                     return false;
                 }
             }
@@ -91,18 +97,42 @@ namespace MB6
             return true;
         }
 
+        public bool CheckInfrontOfNPC()
+        {
+            _raycastController.DetectionDistance = 1f;
+            _raycastController.Ray = new Ray(_npcTransform.position + Vector3.up * -.3f, MoveDirection);
+            if (_raycastController.CheckForCollisions())
+            {
+                return true;
+            }
+
+            return false;
+        }
+
         public void Move()
         {
             CalculateFacing();
+            IsFalling = false;
 
             if (ShouldCheckForGround)
             {
                 if (!CheckForGroundAhead())
                 {
+                    if (_rb.velocity.y < -0.1f)
+                    {
+                        IsFalling = true;
+                    }
                     _rb.velocity = Vector3.zero + Vector3.Project(_rb.velocity, Vector3.up);
                     OnStopped?.Invoke(this, EventArgs.Empty);
                     return;
                 }
+            }
+
+            if (CheckInfrontOfNPC())
+            {
+                _rb.velocity = Vector3.zero + Vector3.Project(_rb.velocity, Vector3.up);
+                OnStopped?.Invoke(this, EventArgs.Empty);
+                return;
             }
 
             _rb.velocity = (MoveDirection * (MaxSpeed * Time.fixedDeltaTime)) + 
@@ -147,6 +177,20 @@ namespace MB6
             }
 
             return 1f;
+        }
+
+        public float TrackFalling()
+        {
+            if (_rb.velocity.y != _lastYVelocity)
+            {
+                _lastYVelocity = _rb.velocity.y;
+                if (_rb.velocity.y <= _fallDamageVelocity)
+                {
+                    return _fallDamageVelocity - _rb.velocity.y;
+                }
+            }
+            
+            return 0f;
         }
 
         public void GizmoDrawRays()

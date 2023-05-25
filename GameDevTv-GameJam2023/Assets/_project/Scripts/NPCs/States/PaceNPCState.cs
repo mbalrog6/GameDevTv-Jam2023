@@ -21,6 +21,8 @@ namespace MB6.NPCs.States
 
         private void HandleOnStopped(object sender, EventArgs e)
         {
+            if (_npcController.IsFalling) return;
+            
             _isMovingRight = !_isMovingRight;
         }
 
