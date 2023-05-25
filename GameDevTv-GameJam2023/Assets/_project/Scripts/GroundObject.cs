@@ -10,7 +10,7 @@ namespace MB6
         private bool _isOrginalDimension;
         private void Awake()
         {
-            _colliders = GetComponentsInChildren<Collider>();
+            _colliders = GetComponentsInChildren<Collider>(true);
             _isOrginalDimension = true;
         }
 

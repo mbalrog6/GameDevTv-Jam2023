@@ -12,8 +12,7 @@ namespace MB6
         public float MaxSpeed { get; set; }
 
         public Vector3 MoveDirection { get; set; }
-        public float NormalizedSpeed => Mathf.Clamp01(_currentSpeed / MaxSpeed);
-
+        public float NormalizedSpeed => ProvideSpeedParameter();
         public bool ShouldCheckForGround { get; set; }
         
         private float _currentSpeed;
@@ -43,6 +42,7 @@ namespace MB6
 
             _status = new NPCStatus();
             _isFacingRight = initialFacing;
+            _lastFacing = initialFacing;
 
             _raycastController = new RaycastController();
             _raycastController.InteractionLayers = layerMask;
@@ -99,15 +99,14 @@ namespace MB6
             {
                 if (!CheckForGroundAhead())
                 {
-                    _currentSpeed = 0f;
                     _rb.velocity = Vector3.zero + Vector3.Project(_rb.velocity, Vector3.up);
                     OnStopped?.Invoke(this, EventArgs.Empty);
                     return;
                 }
             }
 
-            _rb.velocity = (MoveDirection * (MaxSpeed * Time.fixedDeltaTime));//+ 
-                           //Vector3.Project(_rb.velocity, Vector3.up);
+            _rb.velocity = (MoveDirection * (MaxSpeed * Time.fixedDeltaTime)) + 
+                           Vector3.Project(_rb.velocity, Vector3.up);
         }
 
         public void CalculateFacing()
@@ -127,7 +126,27 @@ namespace MB6
             if (MoveDirection.x < 0)
             {
                 _isFacingRight = false;
+                if (_isFacingRight != _lastFacing)
+                {
+                    OnChangedFacing?.Invoke(this, EventArgs.Empty);
+                }
+                _lastFacing = _isFacingRight;
             }
+        }
+        
+        private float ProvideSpeedParameter()
+        {
+            if (MaxSpeed < 1f)
+            {
+                return 0f;
+            }
+
+            if (MaxSpeed < 150)
+            {
+                return .2f;
+            }
+
+            return 1f;
         }
 
         public void GizmoDrawRays()

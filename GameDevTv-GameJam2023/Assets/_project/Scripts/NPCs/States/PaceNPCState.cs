@@ -16,6 +16,7 @@ namespace MB6.NPCs.States
         {
             _npcController.ShouldCheckForGround = true;
             _npcController.OnStopped += HandleOnStopped;
+            _npcController.MaxSpeed = 100f;
         }
 
         private void HandleOnStopped(object sender, EventArgs e)
