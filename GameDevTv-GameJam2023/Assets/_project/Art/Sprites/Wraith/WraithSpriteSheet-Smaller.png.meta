@@ -1,0 +1,1592 @@
+fileFormatVersion: 2
+guid: e695c1de933db53429865d205da16d93
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 70
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wraith-Idle_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1050
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdc35ac93a95c8b4693be8e11852d812
+      internalID: 1389140335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Idle_01
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1050
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32e5d46e69b2302408b06fce99054575
+      internalID: 773068768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Idle_02
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1050
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b93b2e716e1c394eabaa6bb80ad0fcd
+      internalID: -598250159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Idle_03
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 1050
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9212396e7d0a70243b0ce8d0a0e94a69
+      internalID: 2134318431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Idle_04
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 1050
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b6831639a60c0e49be066fbe44e2857
+      internalID: -1423446103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Idle_05
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 1050
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97e88180acc55c64cabdc4e8c77fe42d
+      internalID: 1906820287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Idle_06
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 1050
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55f73ccd17a3c4b4d8d4bfa4ff16835a
+      internalID: 1427058870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Idle_07
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 1050
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33c9688a15531ce48a9704b9ab564da2
+      internalID: 1044397140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Idle_08
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 1050
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 449035b9218b9914fb646ea013ecd5b2
+      internalID: 1078373612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Idle_09
+      rect:
+        serializedVersion: 2
+        x: 2341
+        y: 1050
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcde7fb0d4a3f9e40bd1a7f63b2c6f8f
+      internalID: -2096899439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Idle_10
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 1050
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73df8b5c329819439d4194d60170b85
+      internalID: 521178966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Idle_11
+      rect:
+        serializedVersion: 2
+        x: 2860
+        y: 1050
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5743612b662e9e42a46298ee63e52dc
+      internalID: 2110532865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Idle-Blink_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 840
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4934157e0db243644b741ae05aa901fb
+      internalID: 458210453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Idle-Blink_01
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 840
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74e2b13e9757223498a7aba1758c0577
+      internalID: 794066944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Idle-Blink_02
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 840
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f61830b0a6e8798429c109a31436af29
+      internalID: 1915240890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Idle-Blink_03
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 840
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f81a64f4a0c75a8468e1a2e1822f6533
+      internalID: -2075882433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Idle-Blink_04
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 840
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df298df7c1c9971469f70d6cf587d870
+      internalID: 1635264628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Idle-Blink_05
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 840
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544ef20941f739b46b77cdd8d470636a
+      internalID: -1193238474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Idle-Blink_06
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 840
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c24a039e05dff564388e893be4571575
+      internalID: 1849876029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Idle-Blink_07
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 840
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2af0fc3dde860524f9deb73f49f696d6
+      internalID: 1915578352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Idle-Blink_08
+      rect:
+        serializedVersion: 2
+        x: 2081
+        y: 840
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 096ba0a951e608940b4d178c88bc1cec
+      internalID: 418708469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Idle-Blink_09
+      rect:
+        serializedVersion: 2
+        x: 2341
+        y: 840
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e1ddcc8a9920d84d8ec4d5178216961
+      internalID: 1222643751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Idle-Blink_10
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 840
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eec2dad37a14bb47892cdda084eaff7
+      internalID: -292016232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Idle-Blink_11
+      rect:
+        serializedVersion: 2
+        x: 2860
+        y: 840
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 346bdd0cd00cec147bfed4aa991ba1a0
+      internalID: -1972459960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-MoveForward_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 630
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b9b6cf26546c904dab939cd9c3a79e6
+      internalID: -246543557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-MoveForward_01
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 630
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32ebef24cf0ad05428c94607575f88de
+      internalID: -2129622100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-MoveForward_02
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 630
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70e4232d47d3d354c87e889f74d9ae4b
+      internalID: 542009572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-MoveForward_03
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 630
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76758f5d144704043b0a283d51e7f17a
+      internalID: -210792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-MoveForward_04
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 630
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fa3c738db787bb4a8f6259fa8419f77
+      internalID: -237680172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-MoveForward_05
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 628
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52b8e96a5381a7346bae9f555156f881
+      internalID: -342726049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-MoveForward_06
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 630
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c8c096c02eb054387da25ca21ef3d5
+      internalID: 520212947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-MoveForward_07
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 630
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d7378628e11b114083a2a3096cf8230
+      internalID: -1019011461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-MoveForward_08
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 630
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4cb87fcaa47b144aade96fc67c74a0d
+      internalID: -735888328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-MoveForward_09
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 630
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6956b4a120322348ae8837d054af0cf
+      internalID: -1898557674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-MoveForward_10
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 630
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f9b6fd8b6fdc54990643b35375dd2d
+      internalID: 80725734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-MoveForward_11
+      rect:
+        serializedVersion: 2
+        x: 2860
+        y: 630
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 965014fe31732e0438fe698a9ae36bb1
+      internalID: -1697469440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Attack_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 420
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19cddd31744f4c94e86e4f12a3f581c3
+      internalID: -1846464106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Attack_01
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 420
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af28ce333cb3eb14db8b6119791659ac
+      internalID: 1764574743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Attack_02
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 420
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51fbc88a8ee10124884ac48e95d66656
+      internalID: -745494384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Attack_03
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 420
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a7ab1c308a33241a68bf8f564de86c
+      internalID: 1454925668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Attack_04
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 420
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b79715fb8fa54194a97bbe3f06cbd2bf
+      internalID: -158310291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Attack_05
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 420
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b9c5b4588d8d4748b01ad09c39de359
+      internalID: -1687771596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Attack_06
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 420
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 439ed7865bb3d654e921d94ddad57b93
+      internalID: -470227510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Attack_07
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 420
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4461362d24b8efa48b0f36e5211b7486
+      internalID: 1047637340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Attack_08
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 420
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e13b21018b9c16b41afb0c2d1b111f49
+      internalID: -1651398166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Attack_09
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 420
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c964db5c346a15d4f81c82fcb972fff8
+      internalID: 1073092967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Attack_10
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 420
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e14714c5f7ca15642a9d1b2f67da20b9
+      internalID: -1603722451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Attack_11
+      rect:
+        serializedVersion: 2
+        x: 2860
+        y: 420
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3fd91ecadae918458170e34537622de
+      internalID: -906866143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Cast_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 210
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3309000e29b81384685aa96da939b1bb
+      internalID: -939054079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Cast_01
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 210
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c26d08134d99cf4faa0ae5b9064671b
+      internalID: -1570197175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Cast_02
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 210
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 768f6a64fbb200841b3913956a0f5457
+      internalID: -694858777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Cast_03
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 210
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65bc38b98bf86f7429595785f43a2022
+      internalID: -542746557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Cast_04
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 210
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e92015029b4893540b9930d083e2931f
+      internalID: 1208356639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Cast_05
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 210
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1922431f94add7e41bd1b04589a4b55b
+      internalID: 666198185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Cast_06
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 210
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d69796a3430271d4bb2758c0bf1def47
+      internalID: 165139265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Cast_07
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 210
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e184c9fa86647aa43be1470a2d0238ed
+      internalID: -1663962573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Cast_08
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 210
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af354c6e62fb33b4faca314d9cbf20c1
+      internalID: -1421885594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Cast_09
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 210
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ab049ecd61dd24bac602aa7af8cfde
+      internalID: -1118672280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Cast_10
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 210
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c42fb6c6cb37b4c8563e968e006159
+      internalID: 1135933503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Cast_11
+      rect:
+        serializedVersion: 2
+        x: 2860
+        y: 210
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c64c64345f5ee84289eac640a9baa85
+      internalID: 560502679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Cast_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 156f54360c9ddf04a8a94ec4d7f41076
+      internalID: 328919786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Cast_13
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 0
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43afdff2eccd17149868b0ef083c58a2
+      internalID: -180474897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Cast_14
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 0
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 023753246723c534e981a433faed540c
+      internalID: 1656986351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Cast_15
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 2
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c309a7e993d398341a8a5c269167efbb
+      internalID: 1539577673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Cast_16
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 0
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76ccf1da989e27241b863bfe49db9481
+      internalID: -1767369749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith-Cast_17
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 0
+        width: 260
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7052b679cd901f499e6f4e3b50c9dfa
+      internalID: 2135279028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f2afb18358c13cb4cac9e86ba315f0b2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Wraith-Attack_00: -1846464106
+      Wraith-Attack_01: 1764574743
+      Wraith-Attack_02: -745494384
+      Wraith-Attack_03: 1454925668
+      Wraith-Attack_04: -158310291
+      Wraith-Attack_05: -1687771596
+      Wraith-Attack_06: -470227510
+      Wraith-Attack_07: 1047637340
+      Wraith-Attack_08: -1651398166
+      Wraith-Attack_09: 1073092967
+      Wraith-Attack_10: -1603722451
+      Wraith-Attack_11: -906866143
+      Wraith-Cast_00: -939054079
+      Wraith-Cast_01: -1570197175
+      Wraith-Cast_02: -694858777
+      Wraith-Cast_03: -542746557
+      Wraith-Cast_04: 1208356639
+      Wraith-Cast_05: 666198185
+      Wraith-Cast_06: 165139265
+      Wraith-Cast_07: -1663962573
+      Wraith-Cast_08: -1421885594
+      Wraith-Cast_09: -1118672280
+      Wraith-Cast_10: 1135933503
+      Wraith-Cast_11: 560502679
+      Wraith-Cast_12: 328919786
+      Wraith-Cast_13: -180474897
+      Wraith-Cast_14: 1656986351
+      Wraith-Cast_15: 1539577673
+      Wraith-Cast_16: -1767369749
+      Wraith-Cast_17: 2135279028
+      Wraith-Idle-Blink_00: 458210453
+      Wraith-Idle-Blink_01: 794066944
+      Wraith-Idle-Blink_02: 1915240890
+      Wraith-Idle-Blink_03: -2075882433
+      Wraith-Idle-Blink_04: 1635264628
+      Wraith-Idle-Blink_05: -1193238474
+      Wraith-Idle-Blink_06: 1849876029
+      Wraith-Idle-Blink_07: 1915578352
+      Wraith-Idle-Blink_08: 418708469
+      Wraith-Idle-Blink_09: 1222643751
+      Wraith-Idle-Blink_10: -292016232
+      Wraith-Idle-Blink_11: -1972459960
+      Wraith-Idle_00: 1389140335
+      Wraith-Idle_01: 773068768
+      Wraith-Idle_02: -598250159
+      Wraith-Idle_03: 2134318431
+      Wraith-Idle_04: -1423446103
+      Wraith-Idle_05: 1906820287
+      Wraith-Idle_06: 1427058870
+      Wraith-Idle_07: 1044397140
+      Wraith-Idle_08: 1078373612
+      Wraith-Idle_09: -2096899439
+      Wraith-Idle_10: 521178966
+      Wraith-Idle_11: 2110532865
+      Wraith-MoveForward_00: -246543557
+      Wraith-MoveForward_01: -2129622100
+      Wraith-MoveForward_02: 542009572
+      Wraith-MoveForward_03: -210792
+      Wraith-MoveForward_04: -237680172
+      Wraith-MoveForward_05: -342726049
+      Wraith-MoveForward_06: 520212947
+      Wraith-MoveForward_07: -1019011461
+      Wraith-MoveForward_08: -735888328
+      Wraith-MoveForward_09: -1898557674
+      Wraith-MoveForward_10: 80725734
+      Wraith-MoveForward_11: -1697469440
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

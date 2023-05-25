@@ -18,6 +18,7 @@ namespace MB6
         [SerializeField] private float Drag = 0.1f;
         [SerializeField] private float LevitatingForce;
         [SerializeField] private float SuperFallSpeed;
+        [SerializeField] private float FloatSharpness;
         
         [Header("Misc")]
         [SerializeField] private Vector3 Gravity = new Vector3(0, -30f, 0);
@@ -31,6 +32,11 @@ namespace MB6
         private bool isLevitating;
         private bool isSuperFalling;
         private bool isStableFloating;
+
+        private bool _floatSharpnessTimerStarted;
+        private float _floatSharpnessTimer;
+        public float _normalizedFloatSharpness;
+        
         
         #endregion
         
@@ -113,10 +119,22 @@ namespace MB6
                 currentVelocity *= (1f / (1f + (Drag * deltaTime)));
             }
             
-            // Handle Levitating.
+            // Handle StableFloating.
             if (isStableFloating && !_motor.GroundingStatus.IsStableOnGround)
             {
-                currentVelocity -= Vector3.Project(currentVelocity, _motor.CharacterUp);
+                if (_floatSharpnessTimer <= FloatSharpness)
+                {
+                    _floatSharpnessTimer += deltaTime;
+                    _normalizedFloatSharpness = Mathf.Clamp01(_floatSharpnessTimer / FloatSharpness);
+                }
+                targetMovementVelocity = currentVelocity - Vector3.Project(currentVelocity, _motor.CharacterUp);
+                currentVelocity = Vector3.Lerp(currentVelocity, targetMovementVelocity, _normalizedFloatSharpness);
+            }
+
+            if (!isStableFloating || _motor.GroundingStatus.IsStableOnGround)
+            {
+                _floatSharpnessTimerStarted = false;
+                _normalizedFloatSharpness = 0f;
             }
 
             if (isLevitating)
@@ -146,7 +164,11 @@ namespace MB6
 
         public void BeforeCharacterUpdate(float deltaTime)
         {
-            
+            if (!_motor.GroundingStatus.IsStableOnGround && isStableFloating && !_floatSharpnessTimerStarted)
+            {
+                _floatSharpnessTimerStarted = true;
+                _floatSharpnessTimer = 0f;
+            }
         }
 
         public void PostGroundingUpdate(float deltaTime)

@@ -1,0 +1,2582 @@
+fileFormatVersion: 2
+guid: 8d9ffd4117426bc498f9cfd7cf6e6244
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 120
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DarkGolem-Idle_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4050
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a630e6f67408e94495614665bc446c5
+      internalID: -529627514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Idle_01
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 4050
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57db92021f1a0df45a1632c2dab5d73f
+      internalID: -371098932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Idle_02
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 4050
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb47875b0fee06a42a7034822adb1314
+      internalID: 528279220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Idle_03
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 4050
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f28f95ea77232a748834521270be3f5f
+      internalID: 287540635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Idle_04
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 4050
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a1a28c03bbf64439209fce2e840534
+      internalID: 2075874500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Idle_05
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 4050
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c1b2aafca9702a4cb8653eed64ec7c7
+      internalID: 1024889544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Idle_06
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 4050
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f12c3626284384492c2b063b6a0f67
+      internalID: 1935928954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Idle_07
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 4050
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ac47e0fd287fbb41814b18693485b2b
+      internalID: -1862476996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Idle_08
+      rect:
+        serializedVersion: 2
+        x: 3602
+        y: 4050
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b43bd69501deb694bb96d7dd4d661047
+      internalID: -2099115748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Idle_09
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 4050
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22461a62412b96f4da6e5b59b5dff9bc
+      internalID: -1289666844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Idle_10
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 4050
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e8641c0e5daf684cbad19cc88c05e30
+      internalID: 587421806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Idle_11
+      rect:
+        serializedVersion: 2
+        x: 4950
+        y: 4050
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5588e785ee2095c4a897b90a05b8da51
+      internalID: 1394561077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Idle_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3600
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14af6d354d7abc242959b26e25a29fd0
+      internalID: 1678339769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Idle_13
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 3600
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d6e2ea9ec722a46995fff9813cefa2
+      internalID: -729857354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Idle_14
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 3600
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 469dad44c1cd8d542b711d64e8d1a70e
+      internalID: 586959004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Idle_15
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 3600
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 278c47eb39d40324eaca424af1862cf2
+      internalID: 584924208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Idle_16
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3600
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b6af1d81169b3b49abd53ddd3cbcd33
+      internalID: 71483391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Idle_17
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 3600
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b16afcca5c5324741ae3d200d6fb147c
+      internalID: -274359366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Idle-Blink_00
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 3600
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 750f45d5d6e51ad43b47b760fc4d83b1
+      internalID: -1769595882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Idle-Blink_01
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 3600
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeebfefb9af0c4a46a32ba1e5c3ef32f
+      internalID: -1667211632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Idle-Blink_02
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 3600
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2134813c4852b254d8e8f1d17209fd58
+      internalID: -1600141064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Idle-Blink_03
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 3600
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e151b66bb3ef0e42b23ed972df35650
+      internalID: -1828255245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Idle-Blink_04
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 3600
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed95f87065599d447abaf616a2c5af14
+      internalID: 970554273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Idle-Blink_05
+      rect:
+        serializedVersion: 2
+        x: 4950
+        y: 3600
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca74d0eb8f0fe33478ba5c4f4cf27987
+      internalID: -2140931565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Idle-Blink_06
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3150
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a36e1989ebed1f4abde8174ea088c09
+      internalID: -1795499415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Idle-Blink_07
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 3150
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de0793f8772822647b3e8c542287fbc7
+      internalID: -73198913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Idle-Blink_08
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 3150
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f095609046cb84148b3c7dad4cd1d5fc
+      internalID: 1675091107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Idle-Blink_09
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 3150
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff6c8d227cc6d0e4185b910c81576967
+      internalID: 673934841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Idle-Blink_10
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3150
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eae83868c20b4c41b462b2eca1cea06
+      internalID: -2098830765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Idle-Blink_11
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 3150
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02b5b4f2022fd084c8a7a8f64e47a8d3
+      internalID: 306065528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Idle-Blink_12
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 3150
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c292525a89843cd4a890f89ca3bc5909
+      internalID: -753415812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Idle-Blink_13
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 3150
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd471bb0f3dac0b49919179122e2d87b
+      internalID: 742585987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Idle-Blink_14
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 3150
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae27c0d59b115634784e21a0e154f13b
+      internalID: -170055514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Idle-Blink_15
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 3150
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2cddc4d511e12e41b20e23da7429b43
+      internalID: 755354115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Idle-Blink_16
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 3150
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0209d4a57191f2e448e263c505f017a2
+      internalID: -1609245485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Idle-Blink_17
+      rect:
+        serializedVersion: 2
+        x: 4950
+        y: 3150
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5835997a89226ef48885925523eeab5a
+      internalID: 1467770139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Walking-00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2700
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4787bc17ffaa3449b66cd8fa7c3d19c
+      internalID: 617319235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Walking-01
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 2700
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 369c091d1d32f0e458fb0b0e62fc2d87
+      internalID: -190603335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Walking-02
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 2700
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ed473101f213d48a32dc0897fe13b6
+      internalID: -108383239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Walking-03
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 2700
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8badd76e52f180c47b6a544916926c38
+      internalID: 247135479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Walking-04
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2700
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1aa120edf5ff434884871813eb129fc
+      internalID: 297394572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Walking-05
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 2700
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9bbfaf486e224642802e337c4efa7d7
+      internalID: 1292347221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Walking-06
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 2700
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6740737772fe0d4458b21811fff47e10
+      internalID: 308526591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Walking-07
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 2700
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 629c8b4e06ba9f14b9b9109285e2811c
+      internalID: 1577645329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Walking-08
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 2700
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 522b371526f1b8a4ca574eab2387a8c5
+      internalID: -415634883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Walking-09
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 2700
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5831d18637171dd43aa6b6f3c6685b41
+      internalID: -476833543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Walking-10
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 2700
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7016fa8d8f303eb489bdabb2f6195f1a
+      internalID: -615696452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Walking-11
+      rect:
+        serializedVersion: 2
+        x: 4950
+        y: 2700
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d57a21b7a862364884d5ea787ab3a32
+      internalID: -1218663621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Walking-12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2250
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeaa386872b7aba42ab047a2cc48552f
+      internalID: -670904417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Walking-13
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 2250
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbe084f0b8442fb4d8812e7105571f9e
+      internalID: -1203775099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Walking-14
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 2250
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe9b9fa692419a46a3be297f7383647
+      internalID: -878422403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Walking-15
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 2250
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b0533ac41e968a44871b32e77b9b2ec
+      internalID: -372513636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Walking-16
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2250
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de7ccfd48b4fcb447b9016a50b4845be
+      internalID: 1335938674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Walking-17
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 2250
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c591f3d9ee5d8204eb1c5e2236055809
+      internalID: 1148519159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Walking-18
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 2250
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c9cb46d86874724dbff2b8b870f6a79
+      internalID: -668239437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Walking-19
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 2250
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54de950bd1fa7d04296bc870b22d8b0c
+      internalID: -818378803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Walking-20
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 2250
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79639e4cd5d96a54f8c710e1eec27fa4
+      internalID: -914218285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Walking-21
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 2250
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3280a2404f9fe8f478785bf21797f681
+      internalID: 781679265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Walking-22
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 2250
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccb81dae2f19644428e2dd0dba3eeeaf
+      internalID: -1340728081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Walking-23
+      rect:
+        serializedVersion: 2
+        x: 4950
+        y: 2250
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4147d42b491773b488f64d2033173d64
+      internalID: 920399307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Running_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1800
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03efdc03b4c63d2469c252f013406ee3
+      internalID: 849353828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Running_01
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1800
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 043beceb585cbd24a9a5e69032bc87dc
+      internalID: 2095711484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Running_02
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1800
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75fdfc185e6adb342aa9240237b7644d
+      internalID: 712471159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Running_03
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1800
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eaef537051be4a43ab0872df08f333a
+      internalID: 1316305619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Running_04
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1800
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfb0de88da8976e4ca229e106d9ba836
+      internalID: 1976002264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Running_05
+      rect:
+        serializedVersion: 2
+        x: 2248
+        y: 1800
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98aa5a873cf7a2d4aa400ca9dc5307aa
+      internalID: 289390921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Running_06
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 1800
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c12a78c23db32e4389c917e9c19c75f
+      internalID: -77498247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Running_07
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 1800
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0c95f9a721b98046a0c93392df47778
+      internalID: 441955529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Running_08
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1800
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8791124b7de1b4548a15ea16eb01e57e
+      internalID: 564030609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Running_09
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 1800
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29c6bc98c9237854884f6837bce5dcc3
+      internalID: -1827211083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Running_10
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 1800
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63397b600b010d84aab822c939ad4295
+      internalID: -858472961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Running_11
+      rect:
+        serializedVersion: 2
+        x: 4950
+        y: 1800
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 681b26628545c6b42b046b040b1f6b8e
+      internalID: -1421814388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Throwing_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1350
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e73f9dcff3d621d44a6b4f1774424351
+      internalID: -2033294102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Throwing_01
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1350
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5e760d29faad92468d30083f9abe040
+      internalID: 1169291182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Throwing_02
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1350
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9515ee3c6044c24099d0b5ca45c75ac
+      internalID: 1944524365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Throwing_03
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1350
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21e97f7f08552634194f7cbbc4919d8b
+      internalID: -632300133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Throwing_04
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1350
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d9909b49df59af4eb350495fab23c98
+      internalID: 1301275168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Throwing_05
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 1350
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c4c4bf21b51a674484b5600535952af
+      internalID: -1897224879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Throwing_06
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 1350
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6faf5caf18e3934a8087079785844ea
+      internalID: 961995253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Throwing_07
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 1350
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1d3d7cc13c40e46996beb94942fe92
+      internalID: 950773646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Throwing_08
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1350
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a2f2f476c3d0064488505fc5a281c35
+      internalID: -1975638983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Throwing_09
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 1350
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b13ec35920b2061469b10896751f1f5a
+      internalID: 1586720692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Throwing_10
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 1350
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7127cd521c73c1c458c22f09b774fee1
+      internalID: -608207040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Throwing_11
+      rect:
+        serializedVersion: 2
+        x: 4950
+        y: 1350
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dac8db836449589448977e4172ef274e
+      internalID: -1206667076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Dying_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 900
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eadacd18873a0de4b8c3710fd5d65376
+      internalID: -66189468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Dying_01
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 900
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d590eb8784d17ed4e8b8c1e0aa951e70
+      internalID: 4409405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Dying_02
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 900
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fff213d51acaa9c4d97c171378888614
+      internalID: -1014643252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Dying_03
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 900
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ca8aab1ac132d3439cfff83b260efcf
+      internalID: 832817790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Dying_04
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 900
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89acbd8743c44a045b6ba857207e92d5
+      internalID: 1225707799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Dying_05
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 900
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b82ad4105338f0043b8265b5cfec179b
+      internalID: -838685775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Dying_06
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 900
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4fb536078557a468e568061f62ee0e
+      internalID: -997493817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Dying_07
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 900
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48083f40d0af64e4cb208a8372839285
+      internalID: 498624546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Dying_08
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 900
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d28c6bd0218f18e44b0b5fe3a88cf09e
+      internalID: -326447579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Dying_09
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 900
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b2124d42d2f6e84db68c0a7502ba864
+      internalID: -269522334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Dying_10
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 900
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd08fa76414d0ee45b37360ff2d5a37c
+      internalID: -52688157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Dying_11
+      rect:
+        serializedVersion: 2
+        x: 4950
+        y: 900
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73170eb7f74c5d44c8216e6d8caf9f32
+      internalID: 614019264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Dying_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 450
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8dbc9972bb89f24d88d75537e7b4b9b
+      internalID: 1781152318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Dying_13
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 450
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03af714a28a5e794aac49ff17810c50f
+      internalID: 1193964007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Dying_14
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 450
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2488df66506aa6243ae8e4173d723e60
+      internalID: 121692899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Hurt_00
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 450
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d4e2f4eeaff4a41b67184f7ed95534
+      internalID: -1207911002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Hurt_01
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 450
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a846824b2cc8ec2449cafbc9dd0136e4
+      internalID: 945017241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Hurt_02
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 450
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b379c557d87062549b030ddaee4afb27
+      internalID: -1538115527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Hurt_03
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 450
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c86ce3afa129e2428b8c361ddda94e5
+      internalID: 555256389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Hurt_04
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 450
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25dae69f1d25c8d4cbd796073c1f4f15
+      internalID: -1747968796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Hurt_05
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 450
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc40cc3cf1e3f864aa26b29faa7e5ef5
+      internalID: -808596029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Hurt_06
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 450
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5323b939111e8f844afca0e0b6ad0e6a
+      internalID: -714138273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Hurt_07
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 450
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f649f4c7f49b3b84b9715a54ea0309e1
+      internalID: 1761363349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Hurt_08
+      rect:
+        serializedVersion: 2
+        x: 4950
+        y: 450
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 970946e25ec891149bc0aef2ec3ba65c
+      internalID: 1349468139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Hurt_09
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7dcf8bc90cf5fd469e9870ec010a21e
+      internalID: -1178086467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Hurt_10
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 0
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b28620c50220da346b841e7fba5f359d
+      internalID: -1208439846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkGolem-Hurt_11
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 2
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18d7a00458d3ca448ad650ff65f3dcef
+      internalID: -558389994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 2062b8b132caeaf47b55089340d0f4cb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      DarkGolem-Dying_00: -66189468
+      DarkGolem-Dying_01: 4409405
+      DarkGolem-Dying_02: -1014643252
+      DarkGolem-Dying_03: 832817790
+      DarkGolem-Dying_04: 1225707799
+      DarkGolem-Dying_05: -838685775
+      DarkGolem-Dying_06: -997493817
+      DarkGolem-Dying_07: 498624546
+      DarkGolem-Dying_08: -326447579
+      DarkGolem-Dying_09: -269522334
+      DarkGolem-Dying_10: -52688157
+      DarkGolem-Dying_11: 614019264
+      DarkGolem-Dying_12: 1781152318
+      DarkGolem-Dying_13: 1193964007
+      DarkGolem-Dying_14: 121692899
+      DarkGolem-Hurt_00: -1207911002
+      DarkGolem-Hurt_01: 945017241
+      DarkGolem-Hurt_02: -1538115527
+      DarkGolem-Hurt_03: 555256389
+      DarkGolem-Hurt_04: -1747968796
+      DarkGolem-Hurt_05: -808596029
+      DarkGolem-Hurt_06: -714138273
+      DarkGolem-Hurt_07: 1761363349
+      DarkGolem-Hurt_08: 1349468139
+      DarkGolem-Hurt_09: -1178086467
+      DarkGolem-Hurt_10: -1208439846
+      DarkGolem-Hurt_11: -558389994
+      DarkGolem-Idle-Blink_00: -1769595882
+      DarkGolem-Idle-Blink_01: -1667211632
+      DarkGolem-Idle-Blink_02: -1600141064
+      DarkGolem-Idle-Blink_03: -1828255245
+      DarkGolem-Idle-Blink_04: 970554273
+      DarkGolem-Idle-Blink_05: -2140931565
+      DarkGolem-Idle-Blink_06: -1795499415
+      DarkGolem-Idle-Blink_07: -73198913
+      DarkGolem-Idle-Blink_08: 1675091107
+      DarkGolem-Idle-Blink_09: 673934841
+      DarkGolem-Idle-Blink_10: -2098830765
+      DarkGolem-Idle-Blink_11: 306065528
+      DarkGolem-Idle-Blink_12: -753415812
+      DarkGolem-Idle-Blink_13: 742585987
+      DarkGolem-Idle-Blink_14: -170055514
+      DarkGolem-Idle-Blink_15: 755354115
+      DarkGolem-Idle-Blink_16: -1609245485
+      DarkGolem-Idle-Blink_17: 1467770139
+      DarkGolem-Idle_00: -529627514
+      DarkGolem-Idle_01: -371098932
+      DarkGolem-Idle_02: 528279220
+      DarkGolem-Idle_03: 287540635
+      DarkGolem-Idle_04: 2075874500
+      DarkGolem-Idle_05: 1024889544
+      DarkGolem-Idle_06: 1935928954
+      DarkGolem-Idle_07: -1862476996
+      DarkGolem-Idle_08: -2099115748
+      DarkGolem-Idle_09: -1289666844
+      DarkGolem-Idle_10: 587421806
+      DarkGolem-Idle_11: 1394561077
+      DarkGolem-Idle_12: 1678339769
+      DarkGolem-Idle_13: -729857354
+      DarkGolem-Idle_14: 586959004
+      DarkGolem-Idle_15: 584924208
+      DarkGolem-Idle_16: 71483391
+      DarkGolem-Idle_17: -274359366
+      DarkGolem-Running_00: 849353828
+      DarkGolem-Running_01: 2095711484
+      DarkGolem-Running_02: 712471159
+      DarkGolem-Running_03: 1316305619
+      DarkGolem-Running_04: 1976002264
+      DarkGolem-Running_05: 289390921
+      DarkGolem-Running_06: -77498247
+      DarkGolem-Running_07: 441955529
+      DarkGolem-Running_08: 564030609
+      DarkGolem-Running_09: -1827211083
+      DarkGolem-Running_10: -858472961
+      DarkGolem-Running_11: -1421814388
+      DarkGolem-Throwing_00: -2033294102
+      DarkGolem-Throwing_01: 1169291182
+      DarkGolem-Throwing_02: 1944524365
+      DarkGolem-Throwing_03: -632300133
+      DarkGolem-Throwing_04: 1301275168
+      DarkGolem-Throwing_05: -1897224879
+      DarkGolem-Throwing_06: 961995253
+      DarkGolem-Throwing_07: 950773646
+      DarkGolem-Throwing_08: -1975638983
+      DarkGolem-Throwing_09: 1586720692
+      DarkGolem-Throwing_10: -608207040
+      DarkGolem-Throwing_11: -1206667076
+      DarkGolem-Walking-00: 617319235
+      DarkGolem-Walking-01: -190603335
+      DarkGolem-Walking-02: -108383239
+      DarkGolem-Walking-03: 247135479
+      DarkGolem-Walking-04: 297394572
+      DarkGolem-Walking-05: 1292347221
+      DarkGolem-Walking-06: 308526591
+      DarkGolem-Walking-07: 1577645329
+      DarkGolem-Walking-08: -415634883
+      DarkGolem-Walking-09: -476833543
+      DarkGolem-Walking-10: -615696452
+      DarkGolem-Walking-11: -1218663621
+      DarkGolem-Walking-12: -670904417
+      DarkGolem-Walking-13: -1203775099
+      DarkGolem-Walking-14: -878422403
+      DarkGolem-Walking-15: -372513636
+      DarkGolem-Walking-16: 1335938674
+      DarkGolem-Walking-17: 1148519159
+      DarkGolem-Walking-18: -668239437
+      DarkGolem-Walking-19: -818378803
+      DarkGolem-Walking-20: -914218285
+      DarkGolem-Walking-21: 781679265
+      DarkGolem-Walking-22: -1340728081
+      DarkGolem-Walking-23: 920399307
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

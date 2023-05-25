@@ -1,0 +1,2582 @@
+fileFormatVersion: 2
+guid: ac9ffb93cf3813c4e9fd98f92b5590d1
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 120
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FallenAngel1-Idle_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4050
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e649a90b8d5664194914f416f0be69
+      internalID: -227118583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Idle_01
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 4050
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65a3c9ca7d4de044fae8d9b57ed7476d
+      internalID: -1651663115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Idle_02
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 4050
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 627b35ffd0c72fb4983faa83fd3ec165
+      internalID: 2091039209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Idle_03
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 4050
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a73e3c273dc8c5846956312acfc57c1d
+      internalID: -533104829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Idle_04
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 4050
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c5850c7efbf684598fcbf26057ddcb
+      internalID: 1736162557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Idle_05
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 4050
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56feb9f2451ea024796030806525cc4a
+      internalID: -1970050184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Idle_06
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 4050
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4485c8a02d9927f4f82bdb3b10a40150
+      internalID: 986628588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Idle_07
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 4050
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8dadb92b96a3894b91a8b82ee0f37ac
+      internalID: 1870159784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Idle_08
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 4050
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a487458fce2c98d408438234d55df1d4
+      internalID: -337559677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Idle_09
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 4050
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe5dca761f80bf145ba7f4cbfe1ab023
+      internalID: 1676819324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Idle_10
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 4050
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f5fc848e607094c99b6ea69bd0b929
+      internalID: -2093121407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Idle_11
+      rect:
+        serializedVersion: 2
+        x: 4950
+        y: 4050
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad3ce28edcfd53c4094747a228107764
+      internalID: -137412763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Idle_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3600
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 020aac5802a6ea643920da46d980b10b
+      internalID: 2043425002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Idle_13
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 3600
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8138f2d2f336cd34fb4fa409471180cf
+      internalID: 848785760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Idle_14
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 3600
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f38ac65b6887aaa4ba4a766a7a3230f9
+      internalID: 837770869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Idle_15
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 3600
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3246202e63cf9ab4cb3dcf573fc2e3c1
+      internalID: 1286390526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Idle_16
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3600
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ba5d22870d6b52408d9f986a398d2cd
+      internalID: 1489691951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Idle_17
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 3600
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a6d69a7110a0184ca786eb0429adbad
+      internalID: -1782621511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Idle-Blink_00
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 3600
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd98cf6baf80694b8a6d30f6600ae56
+      internalID: 260082143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Idle-Blink_01
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 3600
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f5b913c1059cda4aacb26081b8e7ec6
+      internalID: -576577602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Idle-Blink_02
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 3600
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38487f7e9cbc5674492a97ef4f7eb2d8
+      internalID: -237636754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Idle-Blink_03
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 3600
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd8514420786b1343a2e1005dc932d92
+      internalID: 2130838739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Idle-Blink_04
+      rect:
+        serializedVersion: 2
+        x: 4503
+        y: 3600
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9b0fcb8a1b749d41a0ae289bb58df86
+      internalID: -720392754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Idle-Blink_05
+      rect:
+        serializedVersion: 2
+        x: 4950
+        y: 3600
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb8fc4e0ad76e614a85ad85d72b2b4e7
+      internalID: 1518753096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Idle-Blink_06
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3150
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d01e002c6dd4b4a40892adb358f4bc81
+      internalID: 1983258962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Idle-Blink_07
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 3150
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58b40d181acfb46468f2d21e37a7b5cc
+      internalID: -1390582307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Idle-Blink_08
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 3150
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e5be5d0704eaf4eb8bd0952d538fee
+      internalID: 1183340475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Idle-Blink_09
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 3150
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 205f197d3b9770a4885be11d7f356a69
+      internalID: 1715410574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Idle-Blink_10
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3150
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 112a38dfcd1d4134bbb4b79e3ffe751f
+      internalID: -1649239091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Idle-Blink_11
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 3150
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d530bdded8ff474e9382e776bfed5f8
+      internalID: 599270406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Idle-Blink_12
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 3150
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb0b96eceadd6564a9afce44f5c1167b
+      internalID: -1989784188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Idle-Blink_13
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 3150
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0c2bbc8c2b2773498e9b6509174c25f
+      internalID: -1745834678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Idle-Blink_14
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 3150
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c36db3399164d36449bf5abb5fce7570
+      internalID: 360893748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Idle-Blink_15
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 3150
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c0a0a1a70bd58144856836d3d50d154
+      internalID: 1253112558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Idle-Blink_16
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 3150
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f91809f18dfb9c4492763f7be45a7d0
+      internalID: -1752590640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Idle-Blink_17
+      rect:
+        serializedVersion: 2
+        x: 4950
+        y: 3150
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 592e3aa8797e0d04cbb37b461b94af80
+      internalID: -1646438533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Walking_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2700
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59086db93e18ff043b2167413c03e027
+      internalID: 226688486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Walking_01
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 2700
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b51cc0a5d5d4e84fa18e3f161959fd4
+      internalID: -1360127912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Walking_02
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 2700
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9135f6af41cc35848940a61857a1d68d
+      internalID: 1933620532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Walking_03
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 2703
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c2ba54f3ef6ab640ac7702bfa15c844
+      internalID: 46389053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Walking_04
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2700
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8f2332f3124c094a869e2e92c666a45
+      internalID: 1528597648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Walking_05
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 2700
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b9b67739eacda42ba67e112002384f
+      internalID: 151420349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Walking_06
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 2700
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20ceb6133cef4e8439c2806e4af0551b
+      internalID: 1120587962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Walking_07
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 2700
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ffb66ee50ba577488fff76053a3e82c
+      internalID: -1952801649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Walking_08
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 2700
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c30a3c296b7e844581ff295e04bd76f
+      internalID: -1408500121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Walking_09
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 2700
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a68d2d14b6b18e94899c4141ff4eb3f7
+      internalID: 1087877878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Walking_10
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 2700
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cbdc1817292b0243b9524a30aa76851
+      internalID: -22018285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Walking_11
+      rect:
+        serializedVersion: 2
+        x: 4950
+        y: 2700
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2556355d128886147b37072caa72ae53
+      internalID: -190719758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Walking_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2250
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 873279731e6068548a15f7865917d98d
+      internalID: 645596988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Walking_13
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 2250
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92c8bde89046e047b2a032605a37087
+      internalID: 696958472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Walking_14
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 2250
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a5bb81721934d46b97d2e7221febc5
+      internalID: -762330396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Walking_15
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 2250
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c9d250b0e092e048996947d5ce795a5
+      internalID: 442225395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Walking_16
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2250
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a9d8c1408556d04bb921aa1212d6f0d
+      internalID: -1726916787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Walking_17
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 2253
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c4ee1a841f6d141b8deb3ea754b5dd
+      internalID: 415741560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Walking_18
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 2250
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b34ce676b17b7314182d23b66ec2fd12
+      internalID: 2032597239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Walking_19
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 2250
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3874bc64e13009f4e82cdae1550789d8
+      internalID: 237509434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Walking_20
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 2250
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d38cd344625b854aaf0ceab78defdb8
+      internalID: -1417059368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Walking_21
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 2250
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9cb90354cbba034d947fc37824c050e
+      internalID: 927161330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Walking_22
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 2250
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 952fdf050c109ba4582bcf3c63529a53
+      internalID: -1193323774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Walking_23
+      rect:
+        serializedVersion: 2
+        x: 4950
+        y: 2250
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6eea289811e079418fec44c1eb87868
+      internalID: -326048528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Running_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1800
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e99614db5a70b418dd31071ae01fa0
+      internalID: -307909120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Running_01
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1800
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ed547f0fe517b34a87d8b0177e2292c
+      internalID: 579634221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Running_02
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1800
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a016efc873962f541bbf0c71f10d60d4
+      internalID: 61667871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Running_03
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1800
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb733ef54b82d824599051b98302f068
+      internalID: 89464618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Running_04
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 1800
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73cd2c1febd429447a91066a6d708e18
+      internalID: -1240073080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Running_05
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 1800
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f90e80fd150db48a3f23c0ad4f2b54
+      internalID: 1369549171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Running_06
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 1800
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d5e8aab4971ebd4797e47d7094c0e2b
+      internalID: 1049305216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Running_07
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 1800
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb658dc60c00c2040bc7799a931ceaa3
+      internalID: -1879519842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Running_08
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1800
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77c1dbdca010efe42902f094a4e1ba76
+      internalID: 1701311961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Running_09
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 1800
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9eecbac9b5c2d34fbe64a8ed98aa9ea
+      internalID: -1950105459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Running_10
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 1800
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b95910dc39b33134b80689786470b738
+      internalID: 1152140333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Running_11
+      rect:
+        serializedVersion: 2
+        x: 4950
+        y: 1800
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac59915286f419345bc9b9763064e67d
+      internalID: -86591960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Throwing_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1350
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d9ae251cbdd5004b825387d44c11824
+      internalID: -1426262190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Throwing_01
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1350
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3de92f3ab4afbf945bcf99aee166cbbd
+      internalID: 1122528059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Throwing_02
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1350
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d802a933ccf4f244191a2b9486f1b16e
+      internalID: 1009113368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Throwing_03
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1350
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe037991cbb9e2643a0aed3e3731e2fe
+      internalID: -435055997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Throwing_04
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1350
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd2b7d6a9ce8b5341bd925e1f84a3176
+      internalID: -78955732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Throwing_05
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 1350
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b9e37714af2818469f6d85370b20ae0
+      internalID: -636166227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Throwing_06
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 1350
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d27821b25449a214489600d7150b614b
+      internalID: -110927895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Throwing_07
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 1350
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8db88979458c8814c9ee5afff567a228
+      internalID: 1370215679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Throwing_08
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1350
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e02fa33f79385446abd9b93292089dd
+      internalID: 1245372984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Throwing_09
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 1350
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4637a165b6e3604bb8c87663daf902b
+      internalID: 1934349125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Throwing_10
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 1350
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 535ec9dd975ea004fb7e460751b276e4
+      internalID: -960090434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Throwing_11
+      rect:
+        serializedVersion: 2
+        x: 4950
+        y: 1350
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8ec60aeb2885824b94469695e14d458
+      internalID: -377429677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Dying_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 900
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84df767f9ceee864282120c43e8f26a0
+      internalID: -1111824320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Dying_01
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 900
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29c5d0a96904bb84680d18c8cc71f434
+      internalID: -901924594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Dying_02
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 900
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b332b56c47bea54280fb80f68255101
+      internalID: 765630467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Dying_03
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 900
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12fb19c2ba7bb8643b13a18a5b0f6330
+      internalID: -335443348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Dying_04
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 900
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a9bd19ddcd11d545a16bf25e00aa055
+      internalID: -282223345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Dying_05
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 900
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4aed052858187341a1e1655a42b2b7e
+      internalID: -1432028052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Dying_06
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 900
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7a3c644047f2574397e60915842a36c
+      internalID: -838508602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Dying_07
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 900
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f949e9cf942a6db4585d42e09e6e89cf
+      internalID: -1430414398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Dying_08
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 900
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82c1c5432a11be649a32f4c08f081094
+      internalID: -1038552329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Dying_09
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 900
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a65510ee3ad90649b5879dd5515eabe
+      internalID: 272141582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Dying_10
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 900
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da669248434637a49bb6c60976802468
+      internalID: 1727633543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Dying_11
+      rect:
+        serializedVersion: 2
+        x: 4950
+        y: 900
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df1c4e704ce8cc49905488fc4d30c27
+      internalID: 725212549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Dying_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 450
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd2607fd5fb517d48aa7756b80db6c93
+      internalID: 2053908161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Dying_13
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 450
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 182bad8ba6071784caf18411d324dff5
+      internalID: -34311274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Dying_14
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 450
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5786c086dacbca440ac266f2a5083bae
+      internalID: 851709766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Hurt_00
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 450
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7b96d47c96af444aba566215ea07b6d
+      internalID: -184148083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Hurt_01
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 450
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7561b3d897ee5f429b825e8a88266dd
+      internalID: 1425395027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Hurt_02
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 453
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0950da18fa10c8d4dbdda0582bff8967
+      internalID: -661479484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Hurt_03
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 450
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af0eb0fffcb42d4a96c4519aeb1c143
+      internalID: -1146524134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Hurt_04
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 450
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c7994cc51b7bb24597558fd43b4a17d
+      internalID: -1922217172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Hurt_05
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 450
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cf62f1eda0351a49beb427a57b75f75
+      internalID: 1777102585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Hurt_06
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 450
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8bddc432a25c7640921cb0c8477072a
+      internalID: 1185798107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Hurt_07
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 450
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06249ecbd94db2d4db41d25909ba5a96
+      internalID: 1710964100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Hurt_08
+      rect:
+        serializedVersion: 2
+        x: 4950
+        y: 450
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a47b17020dc52c04db33566cd557b02d
+      internalID: -59117386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Hurt_09
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00da796a4fb19dc4aa7cd3f3fe37795e
+      internalID: 1197389209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Hurt_10
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 0
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc76e6c6aedb9ca46827812aa4ed3ac6
+      internalID: 609692946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenAngel1-Hurt_11
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 0
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a71fd2c820263a498ffd0a57f27d932
+      internalID: -92274314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 97ccc78854331ee42b325f33acdee3fb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      FallenAngel1-Dying_00: -1111824320
+      FallenAngel1-Dying_01: -901924594
+      FallenAngel1-Dying_02: 765630467
+      FallenAngel1-Dying_03: -335443348
+      FallenAngel1-Dying_04: -282223345
+      FallenAngel1-Dying_05: -1432028052
+      FallenAngel1-Dying_06: -838508602
+      FallenAngel1-Dying_07: -1430414398
+      FallenAngel1-Dying_08: -1038552329
+      FallenAngel1-Dying_09: 272141582
+      FallenAngel1-Dying_10: 1727633543
+      FallenAngel1-Dying_11: 725212549
+      FallenAngel1-Dying_12: 2053908161
+      FallenAngel1-Dying_13: -34311274
+      FallenAngel1-Dying_14: 851709766
+      FallenAngel1-Hurt_00: -184148083
+      FallenAngel1-Hurt_01: 1425395027
+      FallenAngel1-Hurt_02: -661479484
+      FallenAngel1-Hurt_03: -1146524134
+      FallenAngel1-Hurt_04: -1922217172
+      FallenAngel1-Hurt_05: 1777102585
+      FallenAngel1-Hurt_06: 1185798107
+      FallenAngel1-Hurt_07: 1710964100
+      FallenAngel1-Hurt_08: -59117386
+      FallenAngel1-Hurt_09: 1197389209
+      FallenAngel1-Hurt_10: 609692946
+      FallenAngel1-Hurt_11: -92274314
+      FallenAngel1-Idle-Blink_00: 260082143
+      FallenAngel1-Idle-Blink_01: -576577602
+      FallenAngel1-Idle-Blink_02: -237636754
+      FallenAngel1-Idle-Blink_03: 2130838739
+      FallenAngel1-Idle-Blink_04: -720392754
+      FallenAngel1-Idle-Blink_05: 1518753096
+      FallenAngel1-Idle-Blink_06: 1983258962
+      FallenAngel1-Idle-Blink_07: -1390582307
+      FallenAngel1-Idle-Blink_08: 1183340475
+      FallenAngel1-Idle-Blink_09: 1715410574
+      FallenAngel1-Idle-Blink_10: -1649239091
+      FallenAngel1-Idle-Blink_11: 599270406
+      FallenAngel1-Idle-Blink_12: -1989784188
+      FallenAngel1-Idle-Blink_13: -1745834678
+      FallenAngel1-Idle-Blink_14: 360893748
+      FallenAngel1-Idle-Blink_15: 1253112558
+      FallenAngel1-Idle-Blink_16: -1752590640
+      FallenAngel1-Idle-Blink_17: -1646438533
+      FallenAngel1-Idle_00: -227118583
+      FallenAngel1-Idle_01: -1651663115
+      FallenAngel1-Idle_02: 2091039209
+      FallenAngel1-Idle_03: -533104829
+      FallenAngel1-Idle_04: 1736162557
+      FallenAngel1-Idle_05: -1970050184
+      FallenAngel1-Idle_06: 986628588
+      FallenAngel1-Idle_07: 1870159784
+      FallenAngel1-Idle_08: -337559677
+      FallenAngel1-Idle_09: 1676819324
+      FallenAngel1-Idle_10: -2093121407
+      FallenAngel1-Idle_11: -137412763
+      FallenAngel1-Idle_12: 2043425002
+      FallenAngel1-Idle_13: 848785760
+      FallenAngel1-Idle_14: 837770869
+      FallenAngel1-Idle_15: 1286390526
+      FallenAngel1-Idle_16: 1489691951
+      FallenAngel1-Idle_17: -1782621511
+      FallenAngel1-Running_00: -307909120
+      FallenAngel1-Running_01: 579634221
+      FallenAngel1-Running_02: 61667871
+      FallenAngel1-Running_03: 89464618
+      FallenAngel1-Running_04: -1240073080
+      FallenAngel1-Running_05: 1369549171
+      FallenAngel1-Running_06: 1049305216
+      FallenAngel1-Running_07: -1879519842
+      FallenAngel1-Running_08: 1701311961
+      FallenAngel1-Running_09: -1950105459
+      FallenAngel1-Running_10: 1152140333
+      FallenAngel1-Running_11: -86591960
+      FallenAngel1-Throwing_00: -1426262190
+      FallenAngel1-Throwing_01: 1122528059
+      FallenAngel1-Throwing_02: 1009113368
+      FallenAngel1-Throwing_03: -435055997
+      FallenAngel1-Throwing_04: -78955732
+      FallenAngel1-Throwing_05: -636166227
+      FallenAngel1-Throwing_06: -110927895
+      FallenAngel1-Throwing_07: 1370215679
+      FallenAngel1-Throwing_08: 1245372984
+      FallenAngel1-Throwing_09: 1934349125
+      FallenAngel1-Throwing_10: -960090434
+      FallenAngel1-Throwing_11: -377429677
+      FallenAngel1-Walking_00: 226688486
+      FallenAngel1-Walking_01: -1360127912
+      FallenAngel1-Walking_02: 1933620532
+      FallenAngel1-Walking_03: 46389053
+      FallenAngel1-Walking_04: 1528597648
+      FallenAngel1-Walking_05: 151420349
+      FallenAngel1-Walking_06: 1120587962
+      FallenAngel1-Walking_07: -1952801649
+      FallenAngel1-Walking_08: -1408500121
+      FallenAngel1-Walking_09: 1087877878
+      FallenAngel1-Walking_10: -22018285
+      FallenAngel1-Walking_11: -190719758
+      FallenAngel1-Walking_12: 645596988
+      FallenAngel1-Walking_13: 696958472
+      FallenAngel1-Walking_14: -762330396
+      FallenAngel1-Walking_15: 442225395
+      FallenAngel1-Walking_16: -1726916787
+      FallenAngel1-Walking_17: 415741560
+      FallenAngel1-Walking_18: 2032597239
+      FallenAngel1-Walking_19: 237509434
+      FallenAngel1-Walking_20: -1417059368
+      FallenAngel1-Walking_21: 927161330
+      FallenAngel1-Walking_22: -1193323774
+      FallenAngel1-Walking_23: -326048528
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

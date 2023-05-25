@@ -53,6 +53,24 @@ public partial class @MainInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""MinorPower"",
+                    ""type"": ""Button"",
+                    ""id"": ""c9037991-a3d4-41e5-8598-2a11577ec506"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Manifest"",
+                    ""type"": ""Button"",
+                    ""id"": ""8a589837-6f63-405c-80d8-7d13f70487ee"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -60,6 +78,17 @@ public partial class @MainInput: IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""e63b3052-c1c4-4e17-9854-2271f5a6f499"",
                     ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Escape"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b304e359-c593-4122-8f3f-e321303835a8"",
+                    ""path"": ""<Gamepad>/start"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -123,6 +152,61 @@ public partial class @MainInput: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
+                    ""name"": ""2D Vector"",
+                    ""id"": ""6bc83ad0-c6ba-4ea4-a2ad-d45d25195a6e"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""79f6598c-a49a-4667-90c5-7fbf920edd5e"",
+                    ""path"": ""<Gamepad>/leftStick/up"",
+                    ""interactions"": """",
+                    ""processors"": ""AxisDeadzone(min=0.2)"",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""ca2ba7bb-27ef-4b4c-83d0-ba4f3c6cb962"",
+                    ""path"": ""<Gamepad>/leftStick/down"",
+                    ""interactions"": """",
+                    ""processors"": ""AxisDeadzone(min=0.2)"",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""3e7b5135-36f5-44e0-8f67-d89ec4cf5af6"",
+                    ""path"": ""<Gamepad>/leftStick/left"",
+                    ""interactions"": """",
+                    ""processors"": ""AxisDeadzone(min=0.2)"",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""f6c519df-c721-4957-95f4-455069cfc4f3"",
+                    ""path"": ""<Gamepad>/leftStick/right"",
+                    ""interactions"": """",
+                    ""processors"": ""AxisDeadzone(min=0.2)"",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
                     ""name"": """",
                     ""id"": ""770fa1ca-5984-4159-8f4b-8e32e9d674d7"",
                     ""path"": ""<Keyboard>/f"",
@@ -130,6 +214,61 @@ public partial class @MainInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""StableFloat"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0c723235-62f4-4be1-9462-fd9ff437e2d2"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""StableFloat"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c2b8f0ff-bd1c-47c7-94d4-b0d70ded01ae"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MinorPower"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""53f386a4-cefc-421a-881a-5db06b5dcac2"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MinorPower"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9ec49a2c-f649-445e-9cc4-ceb32f5953bd"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Manifest"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9380f169-b8ee-4338-8cc2-0a3d48642ac2"",
+                    ""path"": ""<Keyboard>/leftShift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Manifest"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -143,6 +282,8 @@ public partial class @MainInput: IInputActionCollection2, IDisposable
         m_SpiritPlayerActions_Escape = m_SpiritPlayerActions.FindAction("Escape", throwIfNotFound: true);
         m_SpiritPlayerActions_Move = m_SpiritPlayerActions.FindAction("Move", throwIfNotFound: true);
         m_SpiritPlayerActions_StableFloat = m_SpiritPlayerActions.FindAction("StableFloat", throwIfNotFound: true);
+        m_SpiritPlayerActions_MinorPower = m_SpiritPlayerActions.FindAction("MinorPower", throwIfNotFound: true);
+        m_SpiritPlayerActions_Manifest = m_SpiritPlayerActions.FindAction("Manifest", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -207,6 +348,8 @@ public partial class @MainInput: IInputActionCollection2, IDisposable
     private readonly InputAction m_SpiritPlayerActions_Escape;
     private readonly InputAction m_SpiritPlayerActions_Move;
     private readonly InputAction m_SpiritPlayerActions_StableFloat;
+    private readonly InputAction m_SpiritPlayerActions_MinorPower;
+    private readonly InputAction m_SpiritPlayerActions_Manifest;
     public struct SpiritPlayerActionsActions
     {
         private @MainInput m_Wrapper;
@@ -214,6 +357,8 @@ public partial class @MainInput: IInputActionCollection2, IDisposable
         public InputAction @Escape => m_Wrapper.m_SpiritPlayerActions_Escape;
         public InputAction @Move => m_Wrapper.m_SpiritPlayerActions_Move;
         public InputAction @StableFloat => m_Wrapper.m_SpiritPlayerActions_StableFloat;
+        public InputAction @MinorPower => m_Wrapper.m_SpiritPlayerActions_MinorPower;
+        public InputAction @Manifest => m_Wrapper.m_SpiritPlayerActions_Manifest;
         public InputActionMap Get() { return m_Wrapper.m_SpiritPlayerActions; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -232,6 +377,12 @@ public partial class @MainInput: IInputActionCollection2, IDisposable
             @StableFloat.started += instance.OnStableFloat;
             @StableFloat.performed += instance.OnStableFloat;
             @StableFloat.canceled += instance.OnStableFloat;
+            @MinorPower.started += instance.OnMinorPower;
+            @MinorPower.performed += instance.OnMinorPower;
+            @MinorPower.canceled += instance.OnMinorPower;
+            @Manifest.started += instance.OnManifest;
+            @Manifest.performed += instance.OnManifest;
+            @Manifest.canceled += instance.OnManifest;
         }
 
         private void UnregisterCallbacks(ISpiritPlayerActionsActions instance)
@@ -245,6 +396,12 @@ public partial class @MainInput: IInputActionCollection2, IDisposable
             @StableFloat.started -= instance.OnStableFloat;
             @StableFloat.performed -= instance.OnStableFloat;
             @StableFloat.canceled -= instance.OnStableFloat;
+            @MinorPower.started -= instance.OnMinorPower;
+            @MinorPower.performed -= instance.OnMinorPower;
+            @MinorPower.canceled -= instance.OnMinorPower;
+            @Manifest.started -= instance.OnManifest;
+            @Manifest.performed -= instance.OnManifest;
+            @Manifest.canceled -= instance.OnManifest;
         }
 
         public void RemoveCallbacks(ISpiritPlayerActionsActions instance)
@@ -267,5 +424,7 @@ public partial class @MainInput: IInputActionCollection2, IDisposable
         void OnEscape(InputAction.CallbackContext context);
         void OnMove(InputAction.CallbackContext context);
         void OnStableFloat(InputAction.CallbackContext context);
+        void OnMinorPower(InputAction.CallbackContext context);
+        void OnManifest(InputAction.CallbackContext context);
     }
 }

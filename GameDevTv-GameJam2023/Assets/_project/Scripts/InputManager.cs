@@ -9,6 +9,8 @@ namespace MB6
         public Vector3 MoveHorizontal;
         public Vector3 MoveVertical;
         public bool IsStableFloating;
+        public bool MinorPowerActive;
+        public bool Manifesting;
     }
     public class InputManager : MonoBehaviour, MainInput.ISpiritPlayerActionsActions
     {
@@ -26,6 +28,10 @@ namespace MB6
         {
             _mainInput.SpiritPlayerActions.Escape.performed += OnEscape;
             _mainInput.SpiritPlayerActions.StableFloat.performed += OnStableFloat;
+            _mainInput.SpiritPlayerActions.MinorPower.performed += OnMinorPower;
+
+            _mainInput.SpiritPlayerActions.Manifest.performed += OnManifest;
+            _mainInput.SpiritPlayerActions.Manifest.canceled += OnManifest;
         }
 
         private void Update()
@@ -45,6 +51,13 @@ namespace MB6
             _mainInput.Disable();
         }
 
+        public void SetStableFloating(bool value)
+        {
+            _spiritInputs.IsStableFloating = value;
+        }
+
+        public void SetMinorPower(bool value) => _spiritInputs.MinorPowerActive = value;
+
         public void OnEscape(InputAction.CallbackContext context)
         {
             #if UNITY_EDITOR
@@ -61,6 +74,24 @@ namespace MB6
         public void OnStableFloat(InputAction.CallbackContext context)
         {
             _spiritInputs.IsStableFloating = !_spiritInputs.IsStableFloating;
+        }
+
+        public void OnMinorPower(InputAction.CallbackContext context)
+        {
+            _spiritInputs.MinorPowerActive = !_spiritInputs.MinorPowerActive;
+        }
+
+        public void OnManifest(InputAction.CallbackContext context)
+        {
+            if (context.performed)
+            {
+                _spiritInputs.Manifesting = true;
+            }
+
+            if (context.canceled)
+            {
+                _spiritInputs.Manifesting = false;
+            }
         }
 
         public SpiritInputs GetSpiritInputs()
