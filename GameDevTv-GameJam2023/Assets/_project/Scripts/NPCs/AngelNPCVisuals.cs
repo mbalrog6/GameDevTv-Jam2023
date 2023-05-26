@@ -18,10 +18,17 @@ namespace MB6
             _npc = _goodNPC.GetNPCController();
             _npc.OnChangedFacing += HandleChangeFacing;
             _animator.SetFloat("Speed", .2f);
+            _goodNPC.OnDied += HandleOnDied;
+        }
+
+        private void HandleOnDied(object sender, EventArgs e)
+        {
+            _animator.SetTrigger("Dead");
         }
 
         private void Update()
         {
+            if (_goodNPC.IsDead) return;
             _animator.SetFloat("Speed", _npc.NormalizedSpeed);
             Blink();
         }

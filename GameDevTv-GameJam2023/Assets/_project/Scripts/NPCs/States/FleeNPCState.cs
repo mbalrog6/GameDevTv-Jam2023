@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace MB6._project.Scripts.NPCs.States
+namespace MB6.NPCs.States
 {
     public class FleeNPCState : INPCState   
     {

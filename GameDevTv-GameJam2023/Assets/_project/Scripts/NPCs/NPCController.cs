@@ -195,6 +195,7 @@ namespace MB6
 
         public void GizmoDrawRays()
         {
+            return;
             #if UNITY_EDITOR
             Gizmos.color = Color.blue;
             Gizmos.DrawRay(_raycastController.Ray.origin, _raycastController.Ray.direction * _raycastController.DetectionDistance);
@@ -202,7 +203,7 @@ namespace MB6
 
             Gizmos.color = Color.red;
             Gizmos.DrawRay(_npcTransform.position, MoveDirection * 5f);
-
+            
             foreach (var result in _raycastController.DebugResults)
             {
                 Handles.Label(result.point, result.transform.name);

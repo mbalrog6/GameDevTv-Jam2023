@@ -18,9 +18,11 @@ namespace MB6
         
         private float _activeDistanceSqr;
         private bool _wasDrainedThisFrame;
+        private Collider _energyCollider;
 
         private void Awake()
         {
+            _energyCollider = GetComponent<Collider>();
             _activeDistanceSqr = GetActiveDistanceSqr();
             _wasDrainedThisFrame = false;
         }
@@ -31,14 +33,12 @@ namespace MB6
             {
                 BeingDrained = true;
                 OnBeingDrained?.Invoke(this, EventArgs.Empty);
-                Debug.Log("Being Drained");
             }
 
             if (_wasDrainedThisFrame == false && BeingDrained)
             {
                 BeingDrained = false;
                 OnBeingDrainedEnded?.Invoke(this, EventArgs.Empty);
-                Debug.Log("Drain Ended");
             }
 
             _wasDrainedThisFrame = false;
@@ -66,6 +66,18 @@ namespace MB6
             }
 
             return power * Time.deltaTime;
+        }
+
+        public void DisableEnergyCollider(bool value)
+        {
+            if (value)
+            {
+                _energyCollider.enabled = true;
+            }
+            else
+            {
+                _energyCollider.enabled = false;
+            }
         }
     }
 }

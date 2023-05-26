@@ -1,4 +1,4 @@
-﻿namespace MB6
+﻿namespace MB6.NPCs.States
 {
     public interface INPCState
     {

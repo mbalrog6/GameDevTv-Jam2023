@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using MB6._project.Scripts.NPCs.States;
 using MB6.NPCs.States;
+using TMPro;
 using UnityEditor;
 using UnityEngine;
 
@@ -19,8 +19,8 @@ namespace MB6
         [SerializeField] private int _maxHealth;
         public INPCState CurrentState => _states.Count > 0 ? _states.Peek() : null;
         public EnergyType NPCEnergyType => _energyProvider.EnergyForm;
-        
-        
+
+
         public int Health { get; protected set; }
 
         public int MaxHealth
@@ -41,7 +41,8 @@ namespace MB6
                 }
             }
         }
-        public bool IsDead; 
+        public bool IsDead;
+        private bool _startedFalling;
 
         public event EventHandler<EventArgs> OnDied;
 
@@ -75,6 +76,7 @@ namespace MB6
             _statesLibrary.Add("Pace", new PaceNPCState(_npcController));
             _statesLibrary.Add("StandStill", new StationaryNPCState(_npcController, _player, transform));
             _statesLibrary.Add("Flee", new FleeNPCState(_npcController, _player, transform));
+            _statesLibrary.Add("Dead", new DeadNPCState(_npcController));
 
             _particlesActive = true;
         }
@@ -101,6 +103,8 @@ namespace MB6
 
         public void Update()
         {
+            if (IsDead) return;
+            
             if (_isBeingDrained && _player.IsManifesting)
             {
                 if (_particlesActive)
@@ -159,9 +163,18 @@ namespace MB6
                 _states.Peek().Tick();
             }
             
+            if (IsDead) return;
             if (_npcController.TrackFalling() > 0f)
             {
-                TakeDamage(MaxHealth);
+                _startedFalling = true;
+            }
+            else
+            {
+                if (_startedFalling)
+                {
+                    _startedFalling = false;
+                    TakeDamage(MaxHealth);
+                }
             }
         }
 
@@ -207,15 +220,29 @@ namespace MB6
         }
         #endregion
 
+        public void Die()
+        {
+            int stateCount = _states.Count;
+            for(var i = 0; i< stateCount; i++ )
+            {
+                PopState();
+            }
+            PushState(_statesLibrary["Dead"]);
+            _goodEnergyParticles.Stop();
+            _energyProvider.DisableEnergyCollider(false);
+            _energyProvider.enabled = false;
+        }
+
         #region Health Related Functions...
         public void TakeDamage(int amount)
         {
-            if (amount >= 0) return;
-
+            if (amount <= 0) return;
+            
             Health -= amount;
             if (Health <= 0)
             {
                 OnDied?.Invoke(this, EventArgs.Empty);
+                Die();
                 IsDead = true;
             }
         }
@@ -233,10 +260,5 @@ namespace MB6
 
         public float NormalizedHealth => Mathf.Clamp01((float)Health / MaxHealth);
         #endregion
-
-        private void CheckForFallDamage()
-        {
-            
-        }
     }
 }

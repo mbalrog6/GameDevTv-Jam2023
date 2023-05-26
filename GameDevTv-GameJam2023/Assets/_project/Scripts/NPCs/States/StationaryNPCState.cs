@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace MB6
+namespace MB6.NPCs.States
 {
     public class StationaryNPCState : INPCState
     {
