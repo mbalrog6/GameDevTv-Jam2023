@@ -153,7 +153,9 @@ namespace MB6
                 {
                     if (((AttackSpirtNPCState)CurrentState).IsAttacking)
                     {
-                        Debug.Log("Attacking the Wraith");
+                        Debug.Log("Firing the Darkbolt");
+                        DarkboltPool.Instance.FireDarkBolt(transform.position, 
+                            (_player.transform.position - transform.position).normalized);
                     }
                 }
             }

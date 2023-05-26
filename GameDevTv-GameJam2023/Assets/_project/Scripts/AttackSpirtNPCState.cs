@@ -9,25 +9,23 @@ namespace MB6.NPCs.States
         private Transform _npcTransform;
         private float distanceToSpirit;
         public bool IsAttacking { get; private set; }
-        private bool _hasAttacked;
         private float _attackTimer;
         private float _attackCooldown;
-        private float _distanceToAttackFrom;
+        private float _distanceToStand;
 
         public AttackSpirtNPCState(NPCController npcController, Player player, Transform npcTransform)
         {
             _player = player;
             _npcController = npcController;
             _npcTransform = npcTransform;
-            _hasAttacked = false;
+            _attackTimer = 2f;
         }
         public void OnEnter()
         {
             _npcController.MaxSpeed = 150f;
             FacePlayer();
-            _attackTimer = 0f;
             _attackCooldown = 2f;
-            _distanceToAttackFrom = 2f;
+            _distanceToStand = 2f; 
         }
 
         public void Tick()
@@ -38,24 +36,15 @@ namespace MB6.NPCs.States
                 IsAttacking = false;
             }
 
-            if (_hasAttacked)
-            {
-                _attackTimer += Time.fixedDeltaTime;
-            }
+            _attackTimer += Time.fixedDeltaTime;
 
             if (_attackTimer >= _attackCooldown)
             {
                 _attackTimer = 0f;
-                _hasAttacked = false;
-            }
-
-            if (distanceToSpirit <= _distanceToAttackFrom && !_hasAttacked)
-            {
                 IsAttacking = true;
-                _hasAttacked = true;
             }
 
-            if (distanceToSpirit > _distanceToAttackFrom)
+            if (distanceToSpirit > _distanceToStand)
             {
                 _npcController.MaxSpeed = 150;
             }
