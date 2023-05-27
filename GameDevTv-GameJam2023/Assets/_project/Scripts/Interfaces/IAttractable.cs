@@ -6,5 +6,6 @@ namespace MB6
     {
         public void AttractTowards(Vector3 position, float pullStrength);
         public void BeenReleased();
+        public void SetDimension(bool isOriginalWorld);
     }
 }

@@ -104,7 +104,7 @@ namespace MB6
         public void Update()
         {
             if (IsDead) return;
-            
+
             if (_isBeingDrained && _player.IsManifesting)
             {
                 if (_particlesActive)
@@ -236,6 +236,8 @@ namespace MB6
         #region Health Related Functions...
         public void TakeDamage(int amount)
         {
+            if (IsDead) return;
+            
             if (amount <= 0) return;
             
             Health -= amount;

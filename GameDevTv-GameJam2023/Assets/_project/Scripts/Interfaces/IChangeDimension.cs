@@ -3,5 +3,6 @@
     public interface IChangeDimension
     {
         public void SwapDimension();
+        public void SetDimension(bool isOriginalWorld);
     }
 }

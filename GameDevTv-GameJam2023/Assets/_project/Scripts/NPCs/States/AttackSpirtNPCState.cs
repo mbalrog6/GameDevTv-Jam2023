@@ -25,7 +25,7 @@ namespace MB6.NPCs.States
             _npcController.MaxSpeed = 150f;
             FacePlayer();
             _attackCooldown = 2f;
-            _distanceToStand = 2f; 
+            _distanceToStand = 3f; 
         }
 
         public void Tick()

@@ -44,7 +44,19 @@ namespace MB6
                 _colliders[1].enabled = false;
             }
         }
-        
-        
+
+        public void SetDimension(bool isOriginalWorld)
+        {
+            if (isOriginalWorld)
+            {
+                _colliders[0].enabled = true;
+                _colliders[1].enabled = false;
+            }
+            else
+            {
+                _colliders[0].enabled = false;
+                _colliders[1].enabled = true;
+            }
+        }
     }
 }

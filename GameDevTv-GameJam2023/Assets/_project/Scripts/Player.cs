@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
+
 
 namespace MB6
 {
-    public class Player : MonoBehaviour
+    public class Player : MonoBehaviour, IHealth
     {
         [SerializeField] private PlayerController _playerController;
         [SerializeField] private InputManager _inputManager;
@@ -20,8 +20,35 @@ namespace MB6
         [SerializeField] private float MinorPowerCost;
 
         [SerializeField] private LayerMask _energyLayer;
-        [SerializeField] private LayerMask _MinorPower;
+        [SerializeField] private LayerMask _MinorPowerL;
+        [SerializeField] private LayerMask _MinorPowerD;
+
+        [SerializeField] private int _goodAuraDamage;
         public bool IsLookingRight { get; private set; }
+        
+        public int Health { get; private set; }
+        [SerializeField] private int _maxHealth;
+        public int MaxHealth
+        {
+            get
+            {
+                return _maxHealth;
+            }
+
+            set
+            {
+                _maxHealth = value;
+            }
+        }
+
+        public float NormalizedHealth => Mathf.Clamp01((float)Health / MaxHealth);
+
+        private float _auraDrainTickCount;
+        [SerializeField] private float _auraDrainThreshold;
+
+        public event EventHandler<EventArgs> OnTakeDamage;
+        public event EventHandler<EventArgs> OnHeal;
+        public event EventHandler<EventArgs> OnDied;
         public event EventHandler<MinorPowerEventArg> OnMinorPower;
         public event EventHandler<MinorPowerEventArg> OnMinorPowerTrackedObjectsChanged;
         public event EventHandler<EventArgs> OnManifestPower;
@@ -55,13 +82,12 @@ namespace MB6
         [SerializeField] private float _timeToOpenPortal;
         private float _portalTimer;
 
-        private bool _isMinorPowerOn;
+        public bool _isMinorPowerOn;
+        private bool _lastMinorPowerOn;
         private int _lastNumberOfTrackedObjects;
 
         private List<Transform> _trackedObjectsForMinorPower;
         private List<IAttractable> _attractables;
-
-        private CapsuleCollider _capsuleCollider;
 
         private void Awake()
         {
@@ -78,8 +104,9 @@ namespace MB6
             _currentAlphaCutOff = 1f;
 
             IsLookingRight = true;
-            _capsuleCollider = GetComponent<CapsuleCollider>();
-            
+
+            Health = 50;
+            _auraDrainTickCount = 0f;
         }
 
         private void Update()
@@ -152,35 +179,72 @@ namespace MB6
 
         private void HandleMinorPower()
         {
-            // if this is button click to turn off the minor power.
-            if (_isMinorPowerOn == true && !_spiritInputs.MinorPowerActive)
+            #region Handles if MinorPower was Activated and Has the right amount of energy...
+
+            // Make sure the button press is not captured if EnergyType is Either.
+            if (_energy.GetEnergyType == EnergyType.Either && _spiritInputs.MinorPowerActive)
+            {
+                _spiritInputs.MinorPowerActive = false;
+                _inputManager.SetMinorPower(false);
+            }
+            
+            if (_spiritInputs.MinorPowerActive && _energy.GetEnergy >= MinorPowerCost)
+            {
+                _isMinorPowerOn = true;
+            }
+            else
+            {
+                _isMinorPowerOn = false;
+            }
+            
+            if (_energy.GetEnergy < MinorPowerCost || _energy.GetEnergyType == EnergyType.Either)
+            {
+                _isMinorPowerOn = false;
+            }
+            
+            var buttonPressedThisFrame = _lastMinorPowerOn != _isMinorPowerOn;
+
+            if (buttonPressedThisFrame)
+            {
+                Debug.Log("Button Pressed this Frame");
+            }
+            
+            _lastMinorPowerOn = _isMinorPowerOn;
+            #endregion
+
+            // the power turned off in this frame. 
+            if (buttonPressedThisFrame && _isMinorPowerOn == false)
             {
                 OnMinorPower?.Invoke(this, new MinorPowerEventArg(_trackedObjectsForMinorPower));
-                _trackedObjectsForMinorPower.Clear(); 
-                _isMinorPowerOn = false;
-                
-                foreach (var obj in _attractables)
-                {
-                    obj.BeenReleased();
-                }
-                
+                _attractables.Clear();
+                _trackedObjectsForMinorPower.Clear();
             }
             
-            if (!_spiritInputs.MinorPowerActive) return;
-
-            if (_energy.GetEnergy < MinorPowerCost)
+            #region Determine the direction of the Attraction Force...
+            float attractionPower;
+            switch (_energy.GetEnergyType)
             {
-                _inputManager.SetMinorPower(false);
-                return;
+                case EnergyType.Dark:
+                    attractionPower = -AttractionPower;
+                    break;
+                case EnergyType.Light:
+                    attractionPower = AttractionPower;
+                    break;
+                default:
+                    attractionPower = 0f;
+                    break;
             }
+            #endregion
 
+            if (!_isMinorPowerOn) return;
+            
+            // Remove the cost of activating the Minor Power
             _energy.RemoveEnergy(MinorPowerCost * Time.deltaTime);
             
-            int results = Physics.OverlapSphereNonAlloc(transform.position, _energyDetectionRange, _castColliders, _MinorPower);
+            // Detect the objects in range for MinorPower.
+            int results = Physics.OverlapSphereNonAlloc(transform.position, _energyDetectionRange, _castColliders, IsManifesting ? _MinorPowerD : _MinorPowerL);
             
-            // store if this is the activation click for the minor power
-            var isActivationClick = _isMinorPowerOn == false && _spiritInputs.MinorPowerActive;
-
+            // Clear previous frames list of attractables. 
             foreach (var obj in _attractables)
             {
                 obj.BeenReleased();
@@ -188,29 +252,31 @@ namespace MB6
             
             _trackedObjectsForMinorPower.Clear();
             _attractables.Clear();
-
+            
+            // Run through the list of object detected by Overlapping Sphere.
             for (int i = 0; i < results; i++)
             {
-                IAttractable attractableObject = _castColliders[i].gameObject.GetComponent<IAttractable>();
+                IAttractable attractableObject = _castColliders[i].gameObject.transform.parent.GetComponent<IAttractable>();
                 if (attractableObject != null)
                 {
-                    attractableObject.AttractTowards(transform.position, AttractionPower);
+                    attractableObject.AttractTowards(transform.position, attractionPower);
                     _trackedObjectsForMinorPower.Add(_castColliders[i].transform);
                     _attractables.Add(attractableObject);
                 }
             }
-
+            
+            // number of tracked objects changed fire the Objects changed Event.
             if (_trackedObjectsForMinorPower.Count != _lastNumberOfTrackedObjects)
             {
                 _lastNumberOfTrackedObjects = _trackedObjectsForMinorPower.Count;
-                // send event with new list of objects.
-                if (!isActivationClick)
+                if (!buttonPressedThisFrame)
                 {
                     OnMinorPowerTrackedObjectsChanged?.Invoke(this, new MinorPowerEventArg(_trackedObjectsForMinorPower));
                 }
             }
             
-            if (isActivationClick)
+            // button was pressed to activate the Minor Power this frame. 
+            if (buttonPressedThisFrame)
             {
                 OnMinorPower?.Invoke(this, new MinorPowerEventArg(_trackedObjectsForMinorPower));
                 _isMinorPowerOn = true;
@@ -230,13 +296,38 @@ namespace MB6
         private void AddNearByEnergySources()
         {
             int results = Physics.OverlapSphereNonAlloc(transform.position, _energyDetectionRange, _castColliders, _energyLayer);
+            float power = 0f;
             
             for (int i = 0; i < results; i++)
             {
                 IProvideEnergy energySource = _castColliders[i].gameObject.GetComponent<IProvideEnergy>();
                 if (energySource != null)
                 {
-                    _energy.AddEnergy(energySource.EnergyForm, energySource.GetEnergy(transform.position));
+                    power = energySource.GetEnergy(transform.position);
+                    if (power > 0)
+                    {
+                        if (_energy.GetEnergyType == EnergyType.Dark && energySource.EnergyForm == EnergyType.Light)
+                        {
+                            _auraDrainTickCount += Time.deltaTime;
+                            if (_auraDrainTickCount >= _auraDrainThreshold)
+                            {
+                                TakeDamage(_goodAuraDamage);
+                                _auraDrainTickCount = 0f;
+                            }
+                        }
+
+                        if (_energy.GetEnergyType == EnergyType.Light && energySource.EnergyForm == EnergyType.Light)
+                        {
+                            _auraDrainTickCount += Time.deltaTime;
+                            if (_auraDrainTickCount >= _auraDrainThreshold)
+                            {
+                                Heal(_goodAuraDamage);
+                                _auraDrainTickCount = 0f;
+                            }
+                        }
+                    }
+                    
+                    _energy.AddEnergy(energySource.EnergyForm, power);
                 }
             }
         }
@@ -289,6 +380,43 @@ namespace MB6
                 IsLookingRight = false;
             }
         }
+
+        #region Health Related Functions...
+        public void TakeDamage(int amount)
+        {
+            if (amount <= 0) return;
+            
+            Health -= amount;
+            if (Health <= 0)
+            {
+                Health = 0;
+                OnDied?.Invoke(this, EventArgs.Empty);
+            }
+            else
+            {
+                OnTakeDamage?.Invoke(this, EventArgs.Empty);
+            }
+            
+        }
+
+        public void Heal(int amount)
+        {
+            if (amount <= 0) return;
+
+            Health += amount;
+            if (Health >= MaxHealth)
+            {
+                Health = MaxHealth;
+            }
+            OnHeal?.Invoke(this, EventArgs.Empty);
+        }
+        
+        public void FireBolt()
+        {
+            DarkboltPool.Instance.FireDarkBolt(transform.position + Vector3.left, Vector3.left);
+        }
+
+        #endregion
     }
     
 }

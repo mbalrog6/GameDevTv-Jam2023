@@ -18,7 +18,13 @@ namespace MB6
             _npc = _badNPC.GetNPCController();
             _npc.OnChangedFacing += HandleChangeFacing;
             _animator.SetFloat("Speed", .2f);
+            _badNPC.OnAttack += HandleAttack;
             _badNPC.OnDied += HandleOnDied;
+        }
+
+        private void HandleAttack(object sender, EventArgs e)
+        {
+            _animator.SetTrigger("Throw");
         }
 
         private void HandleOnDied(object sender, EventArgs e)

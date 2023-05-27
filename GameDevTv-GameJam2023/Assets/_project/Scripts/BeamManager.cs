@@ -84,6 +84,8 @@ namespace MB6
 
         private void UpdateMinorPowerBeams(object sender, MinorPowerEventArg e)
         {
+            if (_player.PlayerEnergyType != EnergyType.Light) return;
+            
             _objectsTracked = e.AffectedObjects;
             int difference;
 
@@ -119,7 +121,7 @@ namespace MB6
 
         public void Update()
         {
-            if (_minorPowerActive)
+            if (_minorPowerActive && _player.PlayerEnergyType == EnergyType.Light)
             {
                 CalculateLines();
             }
@@ -139,6 +141,8 @@ namespace MB6
 
         private void CreateMinorPowerBeams(object sender, MinorPowerEventArg e)
         {
+            if (_player.PlayerEnergyType != EnergyType.Light) return;
+            
             _minorPowerActive = !_minorPowerActive;
 
             if (_minorPowerActive)

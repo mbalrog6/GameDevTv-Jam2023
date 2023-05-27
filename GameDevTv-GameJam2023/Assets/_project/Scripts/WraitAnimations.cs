@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 namespace MB6
@@ -7,9 +8,10 @@ namespace MB6
     public class WraitAnimations : MonoBehaviour
     {
         [SerializeField] private Renderer _energyBubbleRenderer;
+        [SerializeField] private Renderer _darkMinorPower;
         [SerializeField] private Gradient _gradient;
+        [SerializeField] private Image _healthBar;
 
-        
         private SpriteRenderer _sprite;
         private Animator _animator;
         private Player _player;
@@ -18,6 +20,11 @@ namespace MB6
         private float blinkTimerTarget;
 
         private bool _isMinorPower;
+
+        private bool _darkPowerAnimating;
+        private float _minorTimer;
+        [SerializeField] private float _timeToFullDarkMinorPower;
+        private MaterialPropertyBlock _darkPropBlock;
 
         private EnergyBubbleVisual _energyBubbleVisual;
 
@@ -28,12 +35,35 @@ namespace MB6
             _player = GetComponent<Player>();
 
             _energyBubbleVisual = new EnergyBubbleVisual(_energyBubbleRenderer, 100f, _gradient);
+            _darkPropBlock = new MaterialPropertyBlock();
         }
 
         private void Start()
         {
             _player.OnMinorPower += AttackAnimation;
             _player.OnManifestPower += CastAnimation;
+            _player.OnTakeDamage += HandleTakeDamage;
+            _player.OnHeal += HandleHeal;
+            _player.OnMinorPowerTrackedObjectsChanged += HandleOnTrackedObjectsChanged;
+            _healthBar.fillAmount = _player.NormalizedHealth;
+        }
+
+        private void HandleOnTrackedObjectsChanged(object sender, MinorPowerEventArg e)
+        {
+            if (_player.PlayerEnergyType == EnergyType.Dark)
+            {
+                _minorTimer = _timeToFullDarkMinorPower * .9f;
+            }
+        }
+
+        private void HandleHeal(object sender, EventArgs e)
+        {
+            _healthBar.fillAmount = _player.NormalizedHealth;
+        }
+
+        private void HandleTakeDamage(object sender, EventArgs e)
+        {
+            _healthBar.fillAmount = _player.NormalizedHealth;
         }
 
         private void CastAnimation(object sender, EventArgs e)
@@ -45,6 +75,12 @@ namespace MB6
         {
             _isMinorPower = !_isMinorPower;
             _animator.SetTrigger("Attack");
+            
+            if (_player.PlayerEnergyType == EnergyType.Dark && _isMinorPower)
+            {
+                _darkPowerAnimating = true;
+            }
+            
         }
 
         private void Update()
@@ -66,6 +102,12 @@ namespace MB6
             }
             
             _energyBubbleVisual.SetEnergyVisual(_player.PlayerEnergyType, _player.PlayerEnergyLevel);
+            
+            if (_darkPowerAnimating)
+            {
+                _darkMinorPower.enabled = true;
+                HandleDarkMinorPowerEffect();
+            }
         }
 
         private void Blink()
@@ -80,6 +122,38 @@ namespace MB6
                 blinkTimerTarget = Random.Range(1f, 2f);
                 _animator.SetTrigger("Blink");
             }
+        }
+
+        private void HandleDarkMinorPowerEffect()
+        {
+            if (_isMinorPower)
+            {
+                _minorTimer += Time.deltaTime;
+            }
+            else
+            {
+                _minorTimer -= Time.deltaTime;
+            }
+            
+            if (_minorTimer >= _timeToFullDarkMinorPower)
+            {
+                _minorTimer = _timeToFullDarkMinorPower;
+                return;
+            }
+
+            if (_minorTimer <= 0f)
+            {
+                _darkPowerAnimating = false;
+                _darkMinorPower.enabled = false;
+                _minorTimer = 0f;
+                return;
+            }
+
+            var size = _minorTimer / _timeToFullDarkMinorPower;
+            _darkMinorPower.GetPropertyBlock(_darkPropBlock);
+            
+            _darkPropBlock.SetFloat("_Size", size);
+            _darkMinorPower.SetPropertyBlock(_darkPropBlock);
         }
     }
 }

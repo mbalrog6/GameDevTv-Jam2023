@@ -33,7 +33,6 @@ namespace MB6
 
         public void FireDarkBolt(Vector3 origin, Vector3 direction)
         {
-            Debug.Log("IN the POOL and Told to Fire");
             if (_inactiveBolts.Count > 0)
             {
                 var darkbolt = _inactiveBolts.Pop();

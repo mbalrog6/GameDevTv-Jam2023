@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using MB6.NPCs.States;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace MB6
 {
@@ -15,6 +14,9 @@ namespace MB6
         [SerializeField] private ItemEnergySource _energyProvider;
 
         [SerializeField] private int _maxHealth;
+        [SerializeField] private float _attckOffsetValue;
+        
+        public event EventHandler<EventArgs> OnAttack;
         public INPCState CurrentState => _states.Count > 0 ? _states.Peek() : null;
         public EnergyType NPCEnergyType => _energyProvider.EnergyForm;
         
@@ -51,7 +53,12 @@ namespace MB6
 
         private bool _isBeingDrained;
         private bool _particlesActive;
-        
+        private Vector3 _playerOffest;
+        private Vector3 _attackOffset;
+
+        [SerializeField] private float _attackTimerThreshold;
+        private float _attackTimer;
+        private bool _attackOnAnimation;
 
 
         private void Awake()
@@ -66,6 +73,8 @@ namespace MB6
                     new Vector3(0f, 0, 0f), 
                     new Vector3(.4f, 0, 0f) 
                 };
+
+            _playerOffest = Vector3.up * .8f; 
             
             _npcController = new NPCController(this, rayCastPoints, true, _layerMask);
 
@@ -78,6 +87,8 @@ namespace MB6
 
             _particlesActive = true;
             _startedFalling = false;
+
+            _attackTimer = 0f;
         }
 
         public NPCController GetNPCController() => _npcController;
@@ -153,11 +164,22 @@ namespace MB6
                 {
                     if (((AttackSpirtNPCState)CurrentState).IsAttacking)
                     {
-                        Debug.Log("Firing the Darkbolt");
-                        DarkboltPool.Instance.FireDarkBolt(transform.position, 
-                            (_player.transform.position - transform.position).normalized);
+                        OnAttack?.Invoke(this, EventArgs.Empty);
+                        _attackOnAnimation = true;
                     }
                 }
+
+                if (_attackOnAnimation)
+                {
+                    _attackTimer += Time.fixedDeltaTime;
+                    if (_attackTimer >= _attackTimerThreshold)
+                    {
+                        _attackTimer = 0f;
+                        _attackOnAnimation = false;
+                        PerformAttack();
+                    }
+                }
+                
             }
             
             if (IsDead) return;
@@ -173,6 +195,21 @@ namespace MB6
                     TakeDamage(MaxHealth);
                 }
             }
+        }
+
+        private void PerformAttack()
+        {
+            _attackOffset = transform.position;
+            if (_npcController.IsFacingRight)
+            {
+                _attackOffset.x += _attckOffsetValue;
+            }
+            else
+            {
+                _attackOffset.x -= _attckOffsetValue;
+            }
+            DarkboltPool.Instance.FireDarkBolt(_attackOffset, 
+                ((_player.transform.position + _playerOffest) - _attackOffset).normalized);
         }
 
         private void OnDrawGizmos()

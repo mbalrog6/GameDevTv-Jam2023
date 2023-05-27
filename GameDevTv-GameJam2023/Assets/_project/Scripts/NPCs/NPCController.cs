@@ -14,6 +14,7 @@ namespace MB6
         public Vector3 MoveDirection { get; set; }
         public float NormalizedSpeed => ProvideSpeedParameter();
         public bool ShouldCheckForGround { get; set; }
+        public bool IsFacingRight => _isFacingRight;
         
         private float _currentSpeed;
         
