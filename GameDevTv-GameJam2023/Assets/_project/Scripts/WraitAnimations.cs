@@ -18,6 +18,8 @@ namespace MB6
         private bool _moving;
         private float blinkTimer;
         private float blinkTimerTarget;
+        private float _hurtTimer;
+        [SerializeField] private float _hurtTimerCooldown;
 
         private bool _isMinorPower;
 
@@ -43,9 +45,16 @@ namespace MB6
             _player.OnMinorPower += AttackAnimation;
             _player.OnManifestPower += CastAnimation;
             _player.OnTakeDamage += HandleTakeDamage;
+            _player.OnDied += HandleDied;
             _player.OnHeal += HandleHeal;
             _player.OnMinorPowerTrackedObjectsChanged += HandleOnTrackedObjectsChanged;
             _healthBar.fillAmount = _player.NormalizedHealth;
+            
+        }
+
+        private void HandleDied(object sender, EventArgs e)
+        {
+            _animator.SetTrigger("Die");
         }
 
         private void HandleOnTrackedObjectsChanged(object sender, MinorPowerEventArg e)
@@ -63,6 +72,13 @@ namespace MB6
 
         private void HandleTakeDamage(object sender, EventArgs e)
         {
+            if (_player.IsDead) return;
+            if (_hurtTimer >= _hurtTimerCooldown)
+            {
+                _hurtTimer = 0f;
+                _animator.SetTrigger("Hurt");
+            }
+            
             _healthBar.fillAmount = _player.NormalizedHealth;
         }
 
@@ -86,7 +102,12 @@ namespace MB6
         private void Update()
         {
             Blink();
-            
+
+            if (_hurtTimer < _hurtTimerCooldown)
+            {
+                _hurtTimer += Time.deltaTime;
+            }
+
             _sprite.flipX = !_player.IsLookingRight;
 
             if (_player.IsMoving && _moving == false)

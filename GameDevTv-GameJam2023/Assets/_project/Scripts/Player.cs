@@ -25,6 +25,7 @@ namespace MB6
 
         [SerializeField] private int _goodAuraDamage;
         public bool IsLookingRight { get; private set; }
+        public bool IsDead { get; private set; }
         
         public int Health { get; private set; }
         [SerializeField] private int _maxHealth;
@@ -384,12 +385,13 @@ namespace MB6
         #region Health Related Functions...
         public void TakeDamage(int amount)
         {
-            if (amount <= 0) return;
+            if (amount <= 0 || IsDead) return;
             
             Health -= amount;
             if (Health <= 0)
             {
                 Health = 0;
+                IsDead = true;
                 OnDied?.Invoke(this, EventArgs.Empty);
             }
             else
@@ -408,12 +410,8 @@ namespace MB6
             {
                 Health = MaxHealth;
             }
+
             OnHeal?.Invoke(this, EventArgs.Empty);
-        }
-        
-        public void FireBolt()
-        {
-            DarkboltPool.Instance.FireDarkBolt(transform.position + Vector3.left, Vector3.left);
         }
 
         #endregion
