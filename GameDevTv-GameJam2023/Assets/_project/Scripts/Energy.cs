@@ -87,7 +87,10 @@
                 }
             }
         }
-        
-        
+
+        public void ChangeEnergy(EnergyType newEnergyType)
+        {
+            _energyType = newEnergyType;
+        }
     }
 }

@@ -165,13 +165,18 @@ namespace MB6
                 return;
             }
             
+            ClearLines();
+        }
+
+        public void ClearLines()
+        {
             _objectsTracked = null;
-            
+
             var numberOfLines = _lines.Count;
-            for(var i = 0; i < numberOfLines; i++)
+            for (var i = 0; i < numberOfLines; i++)
             {
-                _lineRenders[_lines.Peek().Id].enabled = false; 
-                _inactiveLines.Push( _lines.Pop());
+                _lineRenders[_lines.Peek().Id].enabled = false;
+                _inactiveLines.Push(_lines.Pop());
             }
         }
     }

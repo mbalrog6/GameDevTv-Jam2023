@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 
@@ -201,6 +202,8 @@ namespace MB6
             if (_energy.GetEnergy < MinorPowerCost || _energy.GetEnergyType == EnergyType.Either)
             {
                 _isMinorPowerOn = false;
+                _spiritInputs.MinorPowerActive = false;
+                _inputManager.SetMinorPower(false);
             }
             
             var buttonPressedThisFrame = _lastMinorPowerOn != _isMinorPowerOn;
@@ -304,7 +307,41 @@ namespace MB6
                 IProvideEnergy energySource = _castColliders[i].gameObject.GetComponent<IProvideEnergy>();
                 if (energySource != null)
                 {
+                    if (energySource.ShouldChangeEnergy)
+                    {
+                        // GetEnergy for objects that ShouldChangeEnergy return 1 if in range and 0 if out of range
+                        if (energySource.GetEnergy(transform.position) > 0f)
+                        {
+                            if (energySource.EnergyForm == EnergyType.Either && _isMinorPowerOn)
+                            {
+                                foreach (var obj in _attractables)
+                                {
+                                    obj.BeenReleased();
+                                }
+
+                                if (PlayerEnergyType == EnergyType.Light)
+                                {
+                                    OnMinorPower?.Invoke(this, new MinorPowerEventArg(new List<Transform>()));
+                                }
+                                
+                                _isMinorPowerOn = false;
+                                _spiritInputs.MinorPowerActive = false;
+                                _inputManager.SetMinorPower(false);
+                            }
+                            
+                            _energy.ChangeEnergy(energySource.EnergyForm);
+                            return;
+                        }
+                    }
+
                     power = energySource.GetEnergy(transform.position);
+                    
+                    if (energySource.ShouldDrainEnergy)
+                    {
+                        _energy.RemoveEnergy(power);
+                        return;
+                    }
+                    
                     if (power > 0)
                     {
                         if (_energy.GetEnergyType == EnergyType.Dark && energySource.EnergyForm == EnergyType.Light)

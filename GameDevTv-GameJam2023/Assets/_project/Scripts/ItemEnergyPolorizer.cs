@@ -1,10 +1,9 @@
-﻿
-using System;
+﻿using System;
 using UnityEngine;
 
 namespace MB6
 {
-    public class ItemEnergySource : MonoBehaviour, IProvideEnergy
+    public class ItemEnergyPolorizer : MonoBehaviour, IProvideEnergy
     {
         [SerializeField] private EnergyType _energyType;
         [SerializeField] private float _activeDistance;
@@ -33,7 +32,6 @@ namespace MB6
                 _shouldChangeEnergy = value;
             }
         }
-
         public bool ShouldDrainEnergy
         {
             get
@@ -45,7 +43,8 @@ namespace MB6
                 _shouldChangeEnergy = value;
             }
         }
-
+        public EnergyType EnergyForm => _energyType;
+        
         private void Awake()
         {
             _energyCollider = GetComponent<Collider>();
@@ -77,21 +76,17 @@ namespace MB6
         {
             _activeDistanceSqr = GetActiveDistanceSqr();
         }
-
-        public EnergyType EnergyForm => _energyType;
-
         public float GetEnergy(Vector3 receiversPosition)
         {
             float power = 0f;
             var calculatedVector = transform.position - receiversPosition;
             if (calculatedVector.sqrMagnitude <= _activeDistanceSqr)
             {
-                var normalizedPower = Mathf.Clamp01(_activeDistanceSqr / calculatedVector.sqrMagnitude);
-                power = Mathf.Lerp(_minStrength, _maxStrength, normalizedPower);
+                power = 1f; 
                 _wasDrainedThisFrame = true;
             }
 
-            return power * Time.deltaTime;
+            return power;
         }
 
         public void DisableEnergyCollider(bool value)

@@ -6,12 +6,13 @@ namespace MB6
     public class GroundObject : MonoBehaviour, IChangeDimension
     {
         [SerializeField] private Player _player;
+        [SerializeField] private bool IgnoreSwap;
         private Collider[] _colliders;
         private bool _isOrginalDimension;
         private void Awake()
         {
             _colliders = GetComponentsInChildren<Collider>(true);
-            _isOrginalDimension = true;
+            _isOrginalDimension = !_colliders[1].enabled;
         }
 
         private void OnEnable()
@@ -28,6 +29,7 @@ namespace MB6
 
         private void HandleSwapDimension(object sender, EventArgs e)
         {
+            if (IgnoreSwap) return;
             SwapDimension();
         }
 

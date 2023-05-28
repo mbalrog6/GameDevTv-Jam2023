@@ -90,6 +90,7 @@ namespace MB6
         private void AttackAnimation(object sender, EventArgs e)
         {
             _isMinorPower = !_isMinorPower;
+            Debug.Log($"Minor Power is {_isMinorPower}");
             _animator.SetTrigger("Attack");
             
             if (_player.PlayerEnergyType == EnergyType.Dark && _isMinorPower)

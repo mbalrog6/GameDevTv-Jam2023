@@ -6,5 +6,8 @@ namespace MB6
     {
         public EnergyType EnergyForm { get; }
         public float GetEnergy(Vector3 receiversPosition);
+
+        public bool ShouldChangeEnergy { get; }
+        public bool ShouldDrainEnergy { get; }
     }
 }

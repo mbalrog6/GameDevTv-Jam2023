@@ -101,7 +101,7 @@ namespace MB6
         public bool CheckInfrontOfNPC()
         {
             _raycastController.DetectionDistance = 1f;
-            _raycastController.Ray = new Ray(_npcTransform.position + Vector3.up * -.3f, MoveDirection);
+            _raycastController.Ray = new Ray(_npcTransform.position + (Vector3.up * -.3f), MoveDirection);
             if (_raycastController.CheckForCollisions())
             {
                 return true;
