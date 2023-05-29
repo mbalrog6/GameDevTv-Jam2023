@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using MB6.NPCs.States;
-using TMPro;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
 
 

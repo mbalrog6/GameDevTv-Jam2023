@@ -304,7 +304,7 @@ Transform:
   - {fileID: 5293280862223447525}
   - {fileID: 8598384470960243779}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4386592912706081188
 MonoBehaviour:
@@ -318,4 +318,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5634fe03ef4a4d2cba16187aa4802b73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _zDepth: -0.2
   _player: {fileID: 6118003192796806150, guid: 94b74365576b0fa4b872d0d5d4d62763, type: 3}

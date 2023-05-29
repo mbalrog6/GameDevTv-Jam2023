@@ -51,6 +51,7 @@ namespace MB6
     }
     public class BeamManager : MonoBehaviour
     {
+        [SerializeField] private float _zDepth;
         public Player _player;
         
         private Dictionary<int, LineRenderer> _lineRenders;
@@ -133,7 +134,9 @@ namespace MB6
             foreach (var line in _lines)
             {
                 line.Point1 = _player.transform.position;
+                line.Points[0].z = _zDepth;
                 line.Point2 = _objectsTracked[i].position;
+                line.Points[1].z = _zDepth;
                 _lineRenders[line.Id].SetPositions(line.Points);
                 i++;
             }

@@ -7,6 +7,15 @@
       "dependencies": {},
       "hash": "093baf4e09c2cd21c284303a977ec112a43041a7"
     },
+    "com.mb6.screenfadeurp": {
+      "version": "https://github.com/mbalrog6/ScreenFadeURP.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.render-pipelines.universal": "12.1.7"
+      },
+      "hash": "30263b00a5ef5b34cde5a17a002937045e2bff36"
+    },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
       "depth": 0,

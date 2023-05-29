@@ -5658,6 +5658,7 @@ GameObject:
   - component: {fileID: 6118003192796806150}
   - component: {fileID: 3066163155350126614}
   - component: {fileID: 3070872209672569212}
+  - component: {fileID: 5629133660794713783}
   m_Layer: 18
   m_Name: Player
   m_TagString: Untagged
@@ -5686,7 +5687,7 @@ Transform:
   - {fileID: 2684553195380352260}
   - {fileID: 8740315065249935051}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &8028241143651544489
 CapsuleCollider:
@@ -5783,6 +5784,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 65536
   _goodAuraDamage: 1
+  _ManifestingDrain: 3
   _maxHealth: 100
   _auraDrainThreshold: 0.1
   energy: 0
@@ -5857,3 +5859,17 @@ MonoBehaviour:
   - 80
   - -75
   - 100
+--- !u!114 &5629133660794713783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9175602852507979149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd837c1556804b9c82186edede083ff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _player: {fileID: 0}
+  _hurtTimerCoolDown: 2

@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using MB6.NPCs.States;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
 
 namespace MB6

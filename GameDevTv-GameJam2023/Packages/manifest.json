@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "com.febucci.custom-hierarchy": "https://github.com/febucci/unitypackage-custom-hierarchy.git",
+    "com.mb6.screenfadeurp": "https://github.com/mbalrog6/ScreenFadeURP.git",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.cinemachine": "2.9.7",
     "com.unity.collab-proxy": "2.0.4",

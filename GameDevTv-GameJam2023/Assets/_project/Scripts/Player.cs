@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 namespace MB6
@@ -25,6 +25,7 @@ namespace MB6
         [SerializeField] private LayerMask _MinorPowerD;
 
         [SerializeField] private int _goodAuraDamage;
+        [SerializeField] private float _ManifestingDrain;
         public bool IsLookingRight { get; private set; }
         public bool IsDead { get; private set; }
         
@@ -91,6 +92,9 @@ namespace MB6
         private List<Transform> _trackedObjectsForMinorPower;
         private List<IAttractable> _attractables;
 
+        private float _deathTimer;
+        private float _deathTimeStamp;
+
         private void Awake()
         {
             _trackedObjectsForMinorPower = new List<Transform>(5);
@@ -107,12 +111,24 @@ namespace MB6
 
             IsLookingRight = true;
 
-            Health = 50;
+            Health = MaxHealth;
             _auraDrainTickCount = 0f;
         }
 
         private void Update()
         {
+            if (IsDead)
+            {
+                _deathTimer += Time.deltaTime;
+                if (_deathTimer >= _deathTimeStamp)
+                {
+                    _deathTimer = 0;
+                    SceneManager.LoadScene("GameOver");
+                }
+
+                return;
+            }
+            
             _spiritInputs = _inputManager.GetSpiritInputs();
             
             HandleInput();
@@ -120,6 +136,10 @@ namespace MB6
             HandleEnergyGeneration();
             HandleMinorPower();
             HandleManifesting();
+            if (IsManifesting)
+            {
+                _energy.RemoveEnergy(_ManifestingDrain * Time.deltaTime);
+            }
             
             _allowedEnergy = _energy.GetEnergyType;
             energy = _energy.GetEnergy;

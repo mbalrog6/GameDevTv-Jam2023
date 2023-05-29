@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc6d7204e4e14de4eaacc6a3654e041c, type: 3}
+  m_Name: SpirtGuide-Sounds
+  m_EditorClassIdentifier: 
+  Music: {fileID: 8300000, guid: b19b31b7990afab4e8507dd6c2928f2e, type: 3}
+  ButtonClicked:
+  - {fileID: 8300000, guid: 0ec2f5922459ed9428a58b2738135f0d, type: 3}
+  ButtonSelected:
+  - {fileID: 8300000, guid: c896c71498f063549ae51b2b8a30cf13, type: 3}
+  LightMinorPower:
+  - {fileID: 8300000, guid: 6e88178764b97b14da3e47550fb9c332, type: 3}
+  DarkMinorPower:
+  - {fileID: 8300000, guid: 6e88178764b97b14da3e47550fb9c332, type: 3}
+  HurtSounds:
+  - {fileID: 8300000, guid: 4d5aed5e7de0d604f8fa4c8db1b01151, type: 3}
+  - {fileID: 8300000, guid: 4f35c4e20e8dc934fb49e56f69003700, type: 3}
+  - {fileID: 8300000, guid: 2f6ecf98ce20cf24c99561455a675b30, type: 3}
+  - {fileID: 8300000, guid: 8c05cefc769f6e2488933c6e55e0c04b, type: 3}
+  WraithDying:
+  - {fileID: 8300000, guid: 52a25980c63326147b838c37f802089d, type: 3}
+  Moans:
+  - {fileID: 8300000, guid: 34a72147293da7c4aa4fe24cee7475f6, type: 3}
+  - {fileID: 8300000, guid: f4f5e0b962fc7fc488368cf2ff4b8fa9, type: 3}
+  GoodSideMusic:
+  - {fileID: 8300000, guid: 38b372eadbae8364f89ffd99551098e8, type: 3}
+  - {fileID: 8300000, guid: 1f682b54a2275fa4db31d047c1558406, type: 3}
+  BadSideMusic:
+  - {fileID: 8300000, guid: 24b832efcd1e3fe439c749af2f0c3de1, type: 3}
+  - {fileID: 8300000, guid: 77704fb10ffd1234f85684224a49e549, type: 3}
+  - {fileID: 8300000, guid: 59255c58ed4afa6429068d0c5b3ca90b, type: 3}
+  ShortMusic:
+  - {fileID: 8300000, guid: 5d38f7fda13e33e4abf7db5b3743d91d, type: 3}
+  - {fileID: 8300000, guid: b6027d3720026d14a9983a55520a82ee, type: 3}
