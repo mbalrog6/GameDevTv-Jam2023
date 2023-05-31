@@ -41,3 +41,11 @@ MonoBehaviour:
   ShortMusic:
   - {fileID: 8300000, guid: 5d38f7fda13e33e4abf7db5b3743d91d, type: 3}
   - {fileID: 8300000, guid: b6027d3720026d14a9983a55520a82ee, type: 3}
+  BubbleOpening:
+  - {fileID: 8300000, guid: 5fa23764ef59ede44b1db6671a734e56, type: 3}
+  Blurb0: {fileID: 8300000, guid: f7df41edcd9c0994abea116a6c73496c, type: 3}
+  Blurb1: {fileID: 8300000, guid: 179b9a38a25f8b84da8066e983cf49ab, type: 3}
+  Blurb2: {fileID: 8300000, guid: 216377a74dbc3f346886bb558c7020a8, type: 3}
+  Blurb3: {fileID: 8300000, guid: 020bd3df1492a9a4982c8bbca6c5b492, type: 3}
+  Blurb4: {fileID: 8300000, guid: feff03e2c3923884baae8974915d1645, type: 3}
+  Blurb5: {fileID: 0}

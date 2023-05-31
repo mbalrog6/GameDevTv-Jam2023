@@ -16,5 +16,11 @@ namespace MB6
         public AudioClip[] GoodSideMusic;
         public AudioClip[] BadSideMusic;
         public AudioClip[] ShortMusic;
+        public AudioClip[] BubbleOpening;
+        public AudioClip Blurb0;
+        public AudioClip Blurb1;
+        public AudioClip Blurb2;
+        public AudioClip Blurb3;
+        public AudioClip Blurb4;
     }
 }

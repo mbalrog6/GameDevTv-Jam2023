@@ -1,5 +1,7 @@
 ﻿using System.Linq;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
 
 namespace MB6
@@ -61,6 +63,7 @@ namespace MB6
             _raycastController.CheckForCollisions();
         }
 
+#if UNITY_EDITOR
         private void OnDrawGizmos()
         {
             if (isCastingFromNPC)
@@ -95,6 +98,7 @@ namespace MB6
                 }
             }
         }
+        #endif
 
         public GameObject GetNPCGameObject()
         {

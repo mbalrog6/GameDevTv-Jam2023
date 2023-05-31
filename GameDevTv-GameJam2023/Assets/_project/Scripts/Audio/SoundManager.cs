@@ -164,10 +164,39 @@ namespace MB6
         {
             _soundFX.PlayOneShot(GetSound(_soundLibrary.DarkMinorPower));
         }
+        
+        public void PlayBubbleOpening()
+        {
+            _soundFX.PlayOneShot(GetSound(_soundLibrary.BubbleOpening));
+        }
 
         public void PlayContiniousLightPower()
         {
             
+        }
+
+        public void PlayBlurbSound(int currentShowingBlurb)
+        {
+            switch (currentShowingBlurb)
+            {
+                case 0:
+                    _soundFX.PlayOneShot(_soundLibrary.Blurb0);
+                    break;
+                case 1: 
+                    _soundFX.PlayOneShot(_soundLibrary.Blurb1);
+                    break;
+                case 2: 
+                    _soundFX.PlayOneShot(_soundLibrary.Blurb2);
+                    break;
+                case 3: 
+                    _soundFX.PlayOneShot(_soundLibrary.Blurb3);
+                    break;
+                case 4: 
+                    _soundFX.PlayOneShot(_soundLibrary.Blurb4);
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }

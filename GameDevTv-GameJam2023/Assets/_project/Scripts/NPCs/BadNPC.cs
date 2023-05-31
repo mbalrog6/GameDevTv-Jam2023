@@ -214,6 +214,7 @@ namespace MB6
                 ((_player.transform.position + _playerOffest) - _attackOffset).normalized);
         }
 
+#if UNITY_EDITOR
         private void OnDrawGizmos()
         {
             if (EditorApplication.isPlaying)
@@ -221,6 +222,7 @@ namespace MB6
                 _npcController.GizmoDrawRays();
             }
         }
+        #endif
 
         public GameObject GetNPCGameObject()
         {

@@ -71,6 +71,24 @@ public partial class @MainInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""MoveUpDown"",
+                    ""type"": ""Button"",
+                    ""id"": ""4c732d87-bf70-4114-ac27-106e697e3b85"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""MoveRightLeft"",
+                    ""type"": ""Button"",
+                    ""id"": ""3ee309d0-95fc-40cf-b32d-df489066c72e"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -271,6 +289,138 @@ public partial class @MainInput: IInputActionCollection2, IDisposable
                     ""action"": ""Manifest"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""0d4f4fe5-238d-4b6a-b774-6953203ad133"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveUpDown"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""bd2a32c4-e369-4f45-bd98-bb4ee81ab126"",
+                    ""path"": ""<Gamepad>/leftStick/up"",
+                    ""interactions"": """",
+                    ""processors"": ""AxisDeadzone"",
+                    ""groups"": """",
+                    ""action"": ""MoveUpDown"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""b3a7a088-75c7-4780-9c36-dc48c3f5df61"",
+                    ""path"": ""<Gamepad>/leftStick/down"",
+                    ""interactions"": """",
+                    ""processors"": ""AxisDeadzone"",
+                    ""groups"": """",
+                    ""action"": ""MoveUpDown"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""63c2a831-fc42-4faf-abc8-2e2582837d84"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveUpDown"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""a905793f-3fed-48e8-b6d7-472c3a705597"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveUpDown"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""52d1bc60-861c-40b2-b542-2959375af470"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveUpDown"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""79ff8100-624e-46cf-9943-59ebc9eeadea"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveRightLeft"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""a78041c8-57db-4d9c-bd61-88c1b077d4c2"",
+                    ""path"": ""<Gamepad>/leftStick/left"",
+                    ""interactions"": """",
+                    ""processors"": ""AxisDeadzone"",
+                    ""groups"": """",
+                    ""action"": ""MoveRightLeft"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""9ed1c016-100e-46fe-9b48-abb720f466e3"",
+                    ""path"": ""<Gamepad>/leftStick/right"",
+                    ""interactions"": """",
+                    ""processors"": ""AxisDeadzone"",
+                    ""groups"": """",
+                    ""action"": ""MoveRightLeft"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""74cce14f-79d6-4429-8522-2a267279b3e8"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveRightLeft"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""1e723d7b-d288-4338-94db-9644cb830864"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveRightLeft"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""79c67c94-32a4-4f5b-968e-282fd29c5068"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveRightLeft"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
                 }
             ]
         }
@@ -284,6 +434,8 @@ public partial class @MainInput: IInputActionCollection2, IDisposable
         m_SpiritPlayerActions_StableFloat = m_SpiritPlayerActions.FindAction("StableFloat", throwIfNotFound: true);
         m_SpiritPlayerActions_MinorPower = m_SpiritPlayerActions.FindAction("MinorPower", throwIfNotFound: true);
         m_SpiritPlayerActions_Manifest = m_SpiritPlayerActions.FindAction("Manifest", throwIfNotFound: true);
+        m_SpiritPlayerActions_MoveUpDown = m_SpiritPlayerActions.FindAction("MoveUpDown", throwIfNotFound: true);
+        m_SpiritPlayerActions_MoveRightLeft = m_SpiritPlayerActions.FindAction("MoveRightLeft", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -350,6 +502,8 @@ public partial class @MainInput: IInputActionCollection2, IDisposable
     private readonly InputAction m_SpiritPlayerActions_StableFloat;
     private readonly InputAction m_SpiritPlayerActions_MinorPower;
     private readonly InputAction m_SpiritPlayerActions_Manifest;
+    private readonly InputAction m_SpiritPlayerActions_MoveUpDown;
+    private readonly InputAction m_SpiritPlayerActions_MoveRightLeft;
     public struct SpiritPlayerActionsActions
     {
         private @MainInput m_Wrapper;
@@ -359,6 +513,8 @@ public partial class @MainInput: IInputActionCollection2, IDisposable
         public InputAction @StableFloat => m_Wrapper.m_SpiritPlayerActions_StableFloat;
         public InputAction @MinorPower => m_Wrapper.m_SpiritPlayerActions_MinorPower;
         public InputAction @Manifest => m_Wrapper.m_SpiritPlayerActions_Manifest;
+        public InputAction @MoveUpDown => m_Wrapper.m_SpiritPlayerActions_MoveUpDown;
+        public InputAction @MoveRightLeft => m_Wrapper.m_SpiritPlayerActions_MoveRightLeft;
         public InputActionMap Get() { return m_Wrapper.m_SpiritPlayerActions; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -383,6 +539,12 @@ public partial class @MainInput: IInputActionCollection2, IDisposable
             @Manifest.started += instance.OnManifest;
             @Manifest.performed += instance.OnManifest;
             @Manifest.canceled += instance.OnManifest;
+            @MoveUpDown.started += instance.OnMoveUpDown;
+            @MoveUpDown.performed += instance.OnMoveUpDown;
+            @MoveUpDown.canceled += instance.OnMoveUpDown;
+            @MoveRightLeft.started += instance.OnMoveRightLeft;
+            @MoveRightLeft.performed += instance.OnMoveRightLeft;
+            @MoveRightLeft.canceled += instance.OnMoveRightLeft;
         }
 
         private void UnregisterCallbacks(ISpiritPlayerActionsActions instance)
@@ -402,6 +564,12 @@ public partial class @MainInput: IInputActionCollection2, IDisposable
             @Manifest.started -= instance.OnManifest;
             @Manifest.performed -= instance.OnManifest;
             @Manifest.canceled -= instance.OnManifest;
+            @MoveUpDown.started -= instance.OnMoveUpDown;
+            @MoveUpDown.performed -= instance.OnMoveUpDown;
+            @MoveUpDown.canceled -= instance.OnMoveUpDown;
+            @MoveRightLeft.started -= instance.OnMoveRightLeft;
+            @MoveRightLeft.performed -= instance.OnMoveRightLeft;
+            @MoveRightLeft.canceled -= instance.OnMoveRightLeft;
         }
 
         public void RemoveCallbacks(ISpiritPlayerActionsActions instance)
@@ -426,5 +594,7 @@ public partial class @MainInput: IInputActionCollection2, IDisposable
         void OnStableFloat(InputAction.CallbackContext context);
         void OnMinorPower(InputAction.CallbackContext context);
         void OnManifest(InputAction.CallbackContext context);
+        void OnMoveUpDown(InputAction.CallbackContext context);
+        void OnMoveRightLeft(InputAction.CallbackContext context);
     }
 }

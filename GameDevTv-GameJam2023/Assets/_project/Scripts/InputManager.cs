@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 namespace MB6
 {
@@ -37,6 +38,16 @@ namespace MB6
         private void Update()
         {
             var direction = _mainInput.SpiritPlayerActions.Move.ReadValue<Vector2>();
+            
+            #if UNITY_WEBGL
+            var x = _mainInput.SpiritPlayerActions.MoveRightLeft.ReadValue<float>();
+            var y = _mainInput.SpiritPlayerActions.MoveUpDown.ReadValue<float>();
+            
+            _spiritInputs.MoveHorizontal = new Vector3(x, 0f, 0f);
+            _spiritInputs.MoveVertical = new Vector3(0f, y, 0f);
+            return;
+            #endif
+
             _spiritInputs.MoveHorizontal = new Vector3(direction.x, 0f, 0f);
             _spiritInputs.MoveVertical = new Vector3(0f, direction.y, 0f);
         }
@@ -63,6 +74,11 @@ namespace MB6
             #if UNITY_EDITOR
                 UnityEditor.EditorApplication.isPlaying = false;
             #endif
+
+            #if UNITY_WEBGL
+            SceneManager.LoadScene("Main Menu");
+            #endif
+            
             Application.Quit();
         }
 
@@ -92,6 +108,16 @@ namespace MB6
             {
                 _spiritInputs.Manifesting = false;
             }
+        }
+
+        public void OnMoveUpDown(InputAction.CallbackContext context)
+        {
+            
+        }
+
+        public void OnMoveRightLeft(InputAction.CallbackContext context)
+        {
+            
         }
 
         public SpiritInputs GetSpiritInputs()
